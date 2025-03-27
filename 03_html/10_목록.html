@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목록</title>
 </head>
+
 <body>
-    <h1>목록</h1>
-    <h2>설명 목록</h2>
-    <h3>순서가 없는 목록</h3>
-    <h3>순서가 있는 목록</h3>
-
-
+    
     <!--hn중에서 같은 크기는 같은 숫자 여러개 가능
             html에는 부모자식 계념이 있다.
+                css상속
+                자식은 부모보다 안에쓰기
+                현제관계는 들여쓰기x
+
+    shift+alt+f:자동 들여쓰기
     -->
 
     <!--]
@@ -24,6 +26,59 @@
      <dl>: 설명 목록
      <dt>: 용어(이름)
      <dd>: 용어 설명    -->
+
+    <h2>목록</h2>
+<ul>
+    <h3>커피메뉴</h3>
+    <!--순서 없는 목록-->
+    <ul>
+        <li>아메리카노</li>
+            <p>안녕하세용</p>
+            <ul>
+                <li>카페모카</li>
+                <li>카라멜 마키아또</li>
+            </ul> 
+            
+        <li>카페모카</li>
+        <li>카라멜 마키아또</li>
+</ul>
+</ul>
+    <h3>즐겨찾는 커피메뉴 랭킹</h3>
+        <!--순서 있는 목록-->
+    <ol>
+        <li>아메리카노</li>
+        <li>카페모카</li>
+        <li>카라멜 마키아또</li></ol>
+    </body> 
+<!--
+    정의 목록(Definition list) - > dl
+    설명항목scription term)- > dt
+    설명목록의 설명(description)- > dd  
+-->
+  
+    <h3>약어정리</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>
+            hypertext markup language의 약자로 웹 페이지의 <strong>구조와 내용
+                </strong>을 정의하는 언어이다.
+
+        </dd>
+        <dt>CSS</dt>
+        <dd>
+            Cascading Style Sheets의 약자로 웹 페이지의 레이아숙과 서식등을 지정하는 디자인언어이다.
+         
+    </dl>
+    <!--
+        <ol>자식은<li>만
+        <ul>자식은<li>만
+        <dl>자식은<dt>만
+
+            <li>자식은 상관이 없다.
+    -->
+    </body>
     
+
 </body>
+
 </html>
