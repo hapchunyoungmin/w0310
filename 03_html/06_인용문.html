@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이용문</title>
+</head>
+<body>
+    <h1>인용문</h1>
+
+    <!-- 1. <blockquote cite=”URL”>: 긴 인용문
+    2. <q cite=”URL”>: 짧은 인용문
+    3. <abbr title=”의미”>: 약어, 두문자어
+    4. <address>: 문서 또는 기사의 작성자/소유자에 대한 연락처 정보
+    5. <cite>: 작품 제목
+          - >P(문장,문단),SPAN(단어)
+        -->
+
+    <!--디자이너가 많이쓰는 MDM-->
+   <blockquote>cite="https://developer.mozilla.org/ko/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL" URL은 Uniform Resource Locator의 약자입니다. URL은 웹에서 주어진 고유 리소스 주소에 지나지 않습니다. 이론적으로 각각의 유효한 URL은 고유한 리소스를 가리킵니다. 이러한 리소스는 HTML 페이지, CSS 문서, 이미지 등이 될 수 있습니다. 실제로는 몇 가지 예외가 있으며 가장 일반적인 예외는 더 이상 존재하지 않거나 이동된 리소스를 가리키는 URL입니다. URL로 표시되는 리소스와 URL 자체는 웹 서버에서 처리되므로 해당 리소스와 관련 URL을 신중하게 관리하는 것은 웹 서버 소유자에게 달려 있습니다.</blockquote>
+   
+   <!-- alt+shift+아래방향키-->
+    <!-- text-indent: 들여쓰기
+        margin:여백(마진)
+        padding:안쪽여백
+         숫자1은 위아래,숫자2는 좌우 
+    -->
+    <p style="margin:16px 40px;">URL은 Uniform Resource Locator의 약자입니다. URL은 웹에서 주어진 고유 리소스 주소에 지나지 않습니다. 이론적으로 각각의 유효한 URL은 고유한 리소스를 가리킵니다. 이러한 리소스는 HTML 페이지, CSS 문서, 이미지 등이 될 수 있습니다. 실제로는 몇 가지 예외가 있으며 가장 일반적인 예외는 더 이상 존재하지 않거나 이동된 리소스를 가리키는 URL입니다. URL로 표시되는 리소스와 URL 자체는 웹 서버에서 처리되므로 해당 리소스와 관련 URL을 신중하게 관리하는 것은 웹 서버 소유자에게 달려 있습니다.</p>
+
+    <!-- <q>cite="웹주소"내용</q>-인라인 요소
+        짧은 인용문에 사용 
+    -->
+<q>cite="https://developer.mozilla.org/ko/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL"</cite>URL은 Uniform Resource Locator의 약자입니다.</q>
+
+<!--abbreviation:약어-------- >html,css,url-인라인 요소
+    acronym:두문자어-없어짐--- >mr,unesco
+ 
+html 속성
+    1.필수요소
+    2.선택요소(글로벌 속성 포함):cite
+    3.글로벌 속성:class,id,title,style
+    -->
+<abbr title="Uniform Resource Locator">URL</abbr>
+<abbr title="UNESCO(United Nations Educational, Scientific and Cultural Organization)">HTML</abbr>
+
+<!-- cite 태그는 책,시,노래,그림,영화등의 제목을 지정할때 씀(이텔릭으로 쓰임)
+     span 태그는 이탤릭개인적으로 붙여야함
+ --> 
+<!--wrap=alt+w--> 
+<p><cite >the scream</cite>by edvard 1893</p>
+<p><span style="font-style:italic;">the scream</span>by edvard 1893</p>
+
+<span style="text-decoration-line:underline;"the scream>URL</span>
+
+<!--address:주소
+    -footer영역에 주소를 표기할때 사용
+    연락처 정보=이메일주소,URL,실제주소,전화
+    -cite와 달리 이탤릭체로 표기X
+    -->
+<adress>
+    written by gil-dong hong.<br>
+    visit us at<br>
+    box 592,Diseney land<br>
+    USA
+</adress>
+
+<p>Written by gil-dong hong<br>
+    Visit us at<br>
+    box 592,Diseney land<br>
+    USA
+</p>
+</body>
+</html>
