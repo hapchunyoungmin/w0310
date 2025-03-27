@@ -1,0 +1,42 @@
+
+<doumen html>   문서타입을 html5버전으로 작성하겠다.
+<html>          HTML 문서 시작과 종료
+<head>          head 종료
+</head>
+<meta>          문서정보
+<title></title> 웹 브라우저 제목 표시줄에 입력할단어
+<body>
+</body>
+</html>
+<h1></h1>~<h6></h6> 컨텐츠의 제목
+<p></p>         단락
+<br>            줄바꿈
+<hr>
+<pre></pre>
+<span></span>   인라인요소
+<i></i>-        이텔릭
+<b></b>-        볼드
+<small></small>-작게
+<mark></mark>-  형광팬
+<img>           이미지
+<a></a>         린크
+&nbsp;          공백한개
+&let;           >
+&gt;            <
+&quot;          
+&apos;
+&copy           ⓒ
+<style=type>
+<sub></sub>
+<sup></sup>
+<ins></ins>
+<del></del>
+<blockquote></blockquote>
+<cite></cite>
+<adress></adress>
+<code></code>
+<var></var>
+<samp></samp>
+<abbr></abbr>
+<kbd></kbd>
+<em></em>
