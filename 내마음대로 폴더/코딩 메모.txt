@@ -282,3 +282,26 @@ HTMLver5.x
 <section>-
 <footer>-
 
+
+
+사이니지는 정보나 광고를 표출하는 디스플레이로, 
+키오스크는 정보를 검색하거나 주문 등을 할 수 있는 디바이스입니다. 
+
+
+
+<a>태그->페이지 이동용 버트,데이터 전송x
+
+<form>폼(양식)그룹핑
+<input>한줄입력,라디오버튼,체크박스,데이터 전송용버튼①
+<label>글씨를 눌러도 체크되게
+<button>데이터 전송용②
+<textarea>여러줄 입력
+<select>목록에서 선택만 가능
+	<optgroup>
+		<option>
+		<option>
+	<optgroup>
+		<option>
+		<option>
+
+<datelist>목록에서 선택과 입력도 가능
