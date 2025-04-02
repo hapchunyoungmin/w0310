@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--https://caniuse.com-->
+    
+    <h1>폼</h1>
+    <h2>input태그의 타입</h2>
+    입력상자<input  type="text"><br>
+    비밀번호<input  type="password"><br>
+    DB용(숨긴필드)<input  type="hidden"><br>
+    
+    글쓰기<textarea name=""id=""></textarea><br>
+    회칙<textarea name=""id="">회칙을 여기어 기록한다</textarea><br>
+    <!--
+        rows:행수
+        cols:칸수
+
+        가로세로크기
+        width
+        height
+   
+        resize:none;- >크기수정없음 - >수정못함
+        -->
+    회칙<textarea name=""id=""rows="5"cols="100" readonly>회칙을 여기어 기록한다</textarea><br>
+    <!--버튼은 용도에 맞게
+    전송은 로그인 할때
+    -->
+    전송<input  type="submit"><br>
+    <input type="submit"value="전달"><br>
+    <input type="reset"value="취소"><br>
+    <input type="button"value="버튼"><br>
+
+    <button>전송</button>
+    <button>취소</button>
+    <button>버트</button><br>
+
+    <button type="submit">전달</button>
+    <button type="reset">전송</button>
+    <button type="button">취소</button><br>
+    <!--여러개중 여러개 선택-->
+   체크박스<input  type="checkbox"><br>
+    <!--여러개중 하나택-->
+        <!--a누르고 크릭-다중커서
+        ctrl+alt+아래발향키
+
+        name의 속성으로 그룹핑한다.
+        name의 속성값은 임의지정(단,의미있게)
+         -->
+    <input type="radio"name="#">css
+    <input type="radio"name="#">html
+    <input type="radio"name="#">java
+    버튼<input  type="button"><br>
+    이미지버튼 <input  type="image"><br>
+    파일첨부<input  type="file"><br>
+    취소<input  type="reset"><br>
+
+    <!--text 세분화-->
+    검색<input  type="search"><br>
+    전화번호<input  type="tell"><br>
+    주소
+    <select>
+        <option value="">서울특별시</option>
+        <option value="" selected>경기도</option>
+        <option value="">충청도</option>
+        <option value="">강원도</option>
+        <option value="">전라도</option>
+        <option value="">경상도</option>
+    </select>
+    이메일<input  type="email"><br>
+    주소<input  type="url"><br>
+
+    <!--시간-->
+    <input  type="date"><br>
+    <!--datetime-local을 사용하고,datetime은 연결안해주는 브라우저가 존재하여 사용하지 않는다-->
+    <input  type="datetime"><br>
+    <input  type="datetime-local"><br>
+    <input  type="time"><br>
+    <input  type="week"><br>
+    <input  type="month"><br><!--shift+alt+a-->
+
+    <!--색-->
+    <input  type="color"><br>
+    <!--범위-->
+    <input  type="range"><br>
+ 
+    <!--스핀-->
+    <input  type="number"><br>
+    
+</body>
+</html>
