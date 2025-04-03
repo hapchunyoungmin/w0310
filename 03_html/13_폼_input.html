@@ -10,8 +10,15 @@
     
     <h1>폼</h1>
     <h2>input태그의 타입</h2>
-    입력상자<input  type="text"><br>
-    비밀번호<input  type="password"><br>
+    검색<input type="search"><br>
+    <!--
+        for와 id의 값은 같아야한다
+        for와id의 속성값은 임의지(단,의미있게)
+    -->
+    <!--ctr+d=같은단어 선택-->
+    <label for="search">입력상자</label>
+    <input  type="text"id="search"><br>
+    비밀번호 <input type="password"><br>
     DB용(숨긴필드)<input  type="hidden"><br>
     
     글쓰기<textarea name=""id=""></textarea><br>
@@ -44,6 +51,7 @@
     <button type="button">취소</button><br>
     <!--여러개중 여러개 선택-->
    체크박스<input  type="checkbox"><br>
+
     <!--여러개중 하나택-->
         <!--a누르고 크릭-다중커서
         ctrl+alt+아래발향키
@@ -51,26 +59,35 @@
         name의 속성으로 그룹핑한다.
         name의 속성값은 임의지정(단,의미있게)
          -->
-    <input type="radio"name="#">css
-    <input type="radio"name="#">html
-    <input type="radio"name="#">java
+
+    <input type="radio" id="css"name="#">
+    <label for="css">css</label>
+   <input type="radio"id="html"name="#">
+    <label for="html">html</label>
+    <input type="radio" id="java"name="#">
+    <label for="java">java</label><br>
+
+    <label><input type="radio" name="radiogroup">동의함</label>
+    <label><input type="radio" name="radiogroup">동의함</label><br>
+
     버튼<input  type="button"><br>
     이미지버튼 <input  type="image"><br>
     파일첨부<input  type="file"><br>
     취소<input  type="reset"><br>
 
     <!--text 세분화-->
+    <!--<태그명 속설="값" 속성명-->
     검색<input  type="search"><br>
     전화번호<input  type="tell"><br>
     주소
     <select>
-        <option value="">서울특별시</option>
-        <option value="" selected>경기도</option>
-        <option value="">충청도</option>
-        <option value="">강원도</option>
-        <option value="">전라도</option>
-        <option value="">경상도</option>
-    </select>
+        <option value="seoul">서울특별시</option>
+        <option value="gyeong-gi" selected>경기도</option>
+        <option value="chungcheong">충청도</option>
+        <option value="gang-won">강원도</option>
+        <option value="jeonlado">전라도</option>
+        <option value="gyeongsamg">경상도</option>
+    </select><br>
     이메일<input  type="email"><br>
     주소<input  type="url"><br>
 
