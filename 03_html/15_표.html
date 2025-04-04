@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnl</title>
+    <style>
+        /* css */
+        /* 내부 스타일:<style>테그 안에 기록하는 방식 */
+        /* 선택자 +{속성: 값 값 값;} */
+        /* 본문(body)에 있는 td 태그에 테두리를 선두께는 1px,
+        선 종류는 solid,선색은 검정으로 한다.  */
+        td{border:1px solid black;}
+    </style>
+</head>
+<body>
+    <h1>표(tabel,테이블)</h1>
+    <h2>1행2열</h2>
+        <!--이전에는 <tabel border:"1"이렇게 씀-지금은 ㄴㄴ-->
+                <!--tr은 행(row>) td은 셀(열 colum)-->
+    <table style="border:1px solid black;border-collapse:collapse">
+         <tr>
+            <td style="border:1px solid black;">1행1열</td>
+            <td style="border:1px solid black;">1행2열</td>
+        </tr>
+    </tabel><br>
+
+    <h2>1행2열</h2>
+    <table style="border:1px solid black;border-collapse:collapse">
+        <!--tr은 행(row>) td은 셀(열 colum)-->
+        <tr>
+            <td style="border:1px solid black;">1행1열</td>
+            <td style="border:1px solid black;">1행2열</td>
+        </tr>
+    </table>
+    <h2>2행1열</h2>
+    <!--tabel은 자식으로 하나이상의 tr이 있어야한다-->
+    <!--tr은 자식으로 하나이상의 tdrk 있어야한다-->
+    <!--인라인 스타일:html 의 style속성으로 기록하는 방식-->
+    <table>
+        <tr>
+            <td>1행1열</td>
+        </tr>
+        <tr>
+            <td>1행2열</td>
+        </tr>
+    </table>
+</body>
+</html>
