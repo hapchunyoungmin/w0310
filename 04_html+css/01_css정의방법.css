@@ -1,0 +1,7 @@
+/*
+    선택자{속성: 값;}
+*/
+/*p는 type(tag,element) */
+p{color:aqua;}
+/*.값은 class 선택자 */
+.color_aqua{color:aqua;}
