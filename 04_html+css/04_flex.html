@@ -19,16 +19,48 @@
             속성:값;
             속성:값;
             속성:값;
+            .
+            .
+            .
         }*/
+        /*
+            부모요소에 지정
+                display:flex
+                flex-dirrection-방향
+                flex-wrap-줄바꿈
+                justify-content-align(정렬, 맞춤)
+                align-items-정렬
+                align-content-정렬
+
+                   <속기속성>
+                    flex-flow:direection wrap;
+
+            자식요소에 지정
+                flex:1;
+                align-self-정렬
+                flex-grow-성장
+                flex-shrink: 1;-수축
+                flex-basis:1;-가로 세로 크기 조절
+                order:1;-자식 요소 순서
+    
+                      <속기속성>
+                      flex:1=flex: 1 1 0= flex: 1 1 auto
+
+         */
+        /* 부모*/
         .flexbox{
             display: flex;
             display: -webkit-flex;
             display: -ms-flex;
+            flex-direction:column;/*기본값이 row/방향/fld*/
+            flex-wrap: nowrap;/*기본값이 nowrap/줄바꿈/flw*/
             height: 200px;
             background: #cccccc;
         }
+        /*자식*/
         .flexbox > div{
-             flex: 1;
+             flex: 1 ;
+        
              -webkit-flex: 1;
              -ms-flex: 1;
              background: darkcyan;
@@ -39,8 +71,12 @@
 <body>
     <div class="flexbox">
         <div><img src="img/flex.png"alt="flex"></div>
-        <div><img src="img/flex.png"alt="flex"></div>
-        <div><img src="img/flex.png"alt="flex"></div>
-    </div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolores, consequuntur illo numquam quis non dolorem illum repellat aliquid quibusdam accusamus sit eius optio molestiae? Quo animi iure labore nisi!iv>>
+        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolores, consequuntur illo numquam quis non dolorem illum repellat aliquid quibusdam accusamus sit eius optio molestiae? Quo animi iure labore nisi!iv></div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolores, consequuntur illo numquam quis non dolorem illum repellat aliquid quibusdam accusamus sit eius optio molestiae? Quo animi iure labore nisi!iv>>
+        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolores, consequuntur illo numquam quis non dolorem illum repellat aliquid quibusdam accusamus sit eius optio molestiae? Quo animi iure labore nisi!iv></div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolores, consequuntur illo numquam quis non dolorem illum repellat aliquid quibusdam accusamus sit eius optio molestiae? Quo animi iure labore nisi!iv>>
+        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi dolores, consequuntur illo numquam quis non dolorem illum repellat aliquid quibusdam accusamus sit eius optio molestiae? Quo animi iure labore nisi!iv></div>
+   
 </body>
 </html>
