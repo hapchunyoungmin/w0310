@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!--en:영문페이지 ko:한글페이지-->
+    <!-- https://www.w3schools.com/TAgs/ref_language_codes.asp -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css+html</title>
+    <style>
+         /*
+         vender prefix(접두사
+             사파리
+             크롬-webkit-
+             엣지 -ms-
+             파이어폭스-moz-
+             오페라-o- 
+        */
+        /*선택자{
+            속성:값;
+            속성:값;
+            속성:값;
+        }*/
+        .flexbox{
+            display: flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            height: 200px;
+            background: #cccccc;
+        }
+        .flexbox > div{
+             flex: 1;
+             -webkit-flex: 1;
+             -ms-flex: 1;
+             background: darkcyan;
+             margin: 10px;
+         }
+</style>
+</head>
+<body>
+    <div class="flexbox">
+        <div><img src="img/flex.png"alt="flex"></div>
+        <div><img src="img/flex.png"alt="flex"></div>
+        <div><img src="img/flex.png"alt="flex"></div>
+    </div>
+</body>
+</html>
