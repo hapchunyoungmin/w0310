@@ -1,10 +1,27 @@
 @charset "utf-8";
+@import url(<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>);
 
 /* 전체 */
-body {
+body,h1,h2,ul,p{
     margin: 0;
-    background: #fff;
-    color: #222328
+}
+body {
+ background: #fff;
+    color: #222328;
+/*
+    font-family: "Noto Sans KR", sans-serif;
+    font-size:15px;
+    font-weight:700;
+    font-style: italic;
+    line-height: 1.5;
+    */
+/*순서*/
+    font:700 italic 15px/1.5 "npto sans kr", sans-serif;
+}
+ul,li{
+    /*모록의 블릿 기호 제거*/
+    padding: 0;
+    list-style: none;
 }
 
 a {
@@ -19,14 +36,26 @@ a {
 
 /*헤더 */
 .header {
+    display: flex;
     height: 100px;
 }
 
 .logo {
-    background: #ddd;
+    padding:28px;
+    width: 200px;
 }
 .gnb{
-    background: #fff;
+    justify-content:flex-end;
+    padding-right: 32px;
+    width: 1000px;
+    display: flex;
+}
+.main{
+    width: 400px;
+    line-height: 100px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 18px;
 }
 
 /*슬라이드*/
@@ -36,34 +65,61 @@ a {
 
 /* 콘텐츠 */
 .contents {
+    display: flex;
     height: 200px;
 }
-
-.notice {
-    background: #bbb;
+.notice span{
+    display:inline-block;
+    width: 280px;
+  
 }
-
+.notice {
+    padding: 16px 0 0 16px;
+    width: 400px;
+    line-height: 1.8;
+}
+.notice h2{
+    margin-bottom: 8px;
+}
 .banner {
-    backgroung: #aaa;
+    padding:5px;
+    width: 400px;
 }
 
 .shortcut {
-    background: #999;
+    padding:5px;
+    width: 400px;
 }
 
 /* 푸터*/
 .footer {
+    display: flex;
     height: 100px;
+    background: #edd3b1;
+    color: #828282;
 }
 
 .blogo {
-    background: #888;
+    padding:28px;
+    width: 200px;
 }
 
 .copy {
-    background: #777;
+    padding: 24px;
+    text-align: center;
+    width: 800px;
 }
 
 .sns {
-    background: #666;
+    width: 200px;
+    line-height: 100px;
+    text-align: center;
+    font-size:25px;
+}
+.sns li{
+    display:inline-block;
+}
+.sns a{
+    color: #818181;;
+    margin: 8px;
 }
