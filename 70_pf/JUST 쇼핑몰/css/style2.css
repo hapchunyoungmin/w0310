@@ -16,7 +16,7 @@ body {
     line-height: 1.5;
     */
 /*순서*/
-    font:700 italic 15px/1.5 "npto sans kr", sans-serif;
+    font:700 italic 15px/1.5 "noto sans kr", sans-serif;
 }
 ul,li{
     /*모록의 블릿 기호 제거*/
