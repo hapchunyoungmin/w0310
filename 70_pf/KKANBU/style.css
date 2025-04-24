@@ -86,10 +86,11 @@ body {
     width: 592px;
     height: 500px;
 }
-.bbox{
-    padding: 10px 40px;          
-    border: 2px solid #ffffff;       
-    display: inline-block;   
+
+.bbox {
+    padding: 10px 40px;
+    border: 2px solid #ffffff;
+    display: inline-block;
 
 }
 
@@ -148,15 +149,31 @@ body {
 }
 
 .notice {
-    padding: 16px 0 0 16px;
+    padding: 5px 0 0 16px;
     width: 330px;
     line-height: 1.8;
     background: #ffffff;
 }
+.tt{
+    color: #000;
+}
+.tt span {
+    display: inline-block;
+    color: #712222;
+}
+
+.cc {
+    font-size: 14px;
+}
+
+.cc span {
+    display: inline-block;
+    width: 220px;
+}
 
 .notice h2 {
-    margin-bottom:5px;
-    display:inline-block;
+    margin-bottom: 5px;
+    display: inline-block;
 }
 
 .cc {
@@ -164,20 +181,24 @@ body {
 }
 
 .cc hr {
-    border: 0.1px solid #e8e8e8;
+    border: 0.1px solid #000000;
     margin: 20px 0;
 }
-.inquiry{
+
+.inquiry {
     width: 330px;
     height: 300px;
     background: #ffffff;
 }
-.dd{
+
+.dd {
     padding-top: 40px;
 }
-.gg{
-    padding-top:40px;
+
+.gg {
+    padding-top: 40px;
 }
+
 .mean {
     width: 330px;
     height: 300px;
