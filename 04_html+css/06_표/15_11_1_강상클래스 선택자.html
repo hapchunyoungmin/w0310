@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html+css</title>
+    <style>
+        /*
+            ~child->타입 구별하지 않음
+            :nth-child(_)
+            :nth-last-child(_)
+            :first-child
+            :last-child
+
+            ~of-type-> 타입 구별함
+            :nth-of-type(_)
+            :nth-last-of-type(_)
+            :first-of-type
+            :last-child     
+        */
+        /* p::first-letter {
+            background:saddlebrown;
+        } 맨 앞 글자 색*/
+        /* >는자식만 */
+        p:first-of-type {
+            color: red;
+        }
+
+        div>p:nth-of-type(1) {
+            background: yellow;
+        }
+
+        p:first-of-type {
+            border: 3px solid red;
+        }
+
+        p:last-of-type {
+            border: 2px dotted blue;
+        }
+
+        /* n은 숫자및 수열(2n,2n+1,3n+2.....)odd(홀수),even(짝수)*/
+        .box2 p:nth-of-type(3) {
+            border: 2px dashed green;
+        }
+        /* 2n은 2xn ,n=123.....*/
+        .box p:nth-of-type(even) {
+            background:lightgoldenrodyellow;
+        }
+        .box p:nth-of-type(odd) {
+            background:lightpink;
+        }
+    </style>
+</head>
+<h1>가상클레스 선택자</h1>
+<h2>~child</h2>
+
+<body>
+    <div class="box">
+        <h3>난 h3로 내가 첫번쨰자식이야!</h3>
+        <p>div의 첫번째 자식p</p>
+        <p>div의 두번째 자식p</p>
+        <p>div의 세번째 자식p</p>
+        <p>div의 네번째 자식p</p>
+        <p>div의 다섯번째 자식p</p>
+        <p>div의 여섯번째 자식p</p>
+        <p>div의 일곱번째 자식p</p>
+    </div>
+    <h2>~of type</h2>
+
+    <body>
+        <div class="box2">
+            <p>div의 첫번째 자식p</p>
+            <p>div의 두번째 자식p</p>
+            <p>div의 세번째 자식p</p>
+            <p>div의 네번째 자식p</p>
+            <p>div의 다섯번째 자식p</p>
+        </div>
+    </body>
+
+</html>
