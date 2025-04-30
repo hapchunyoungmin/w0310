@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html+css</title>
+  </head>
+  <style>
+    /*
+                글자크기        여백
+        body        16px        8px
+        p           16px        1em(16px)
+        h3          1.17em      1em(18.72px)
+        여백의 글자 크기의 배수
+    */
+    body,
+    h3,
+    div,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    h3 {
+      padding: 10px 70px 10px;
+      border-bottom: 1px dotted #aaa;
+      color: #357;
+    }
+    .toomany {
+      width: 75%;
+      min-width: 600px;
+      /*
+        가로크기가 부모크기의 75%이고,부모크기를 늘렸을때 최소 가로 크기는 800px이고 커져도 최대 1200px
+        min-width:800px;
+        max-width: 1200px;
+        */
+        word-break: break-all;
+        text-align: justify;
+    }
+    img {
+      width: 90%;
+    }
+    .lotus {
+      border: 1px solid #aaa;
+      width: 150px;
+      padding: 10px;
+      margin-left: 20px;
+      font-size: 10px;
+      float: right;
+    }
+  </style>
+  <body></body>
+  <h3>써니 초록 농장-연꽃 한꼐 포근하고 건강하게</h3>
+  <div class="toomany">
+    <div class="lotus">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn8WE9SAxyE5noEIDFZM2bqw89Xu_UGWu-TA&s"
+        alt="연꽃"
+      />
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+    </div>
+    <p>
+      Lorem Ipsum is simply dummy <br />text of the printing and typesetting
+      industry.when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+  </div>
+</html>

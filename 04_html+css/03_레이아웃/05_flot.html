@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        /*
+        불록레벨 요소
+            width: auto;-> 부모크기의 100%
+        */
+        h1,p{
+            border: 1px solid #000;
+        }
+        h1{
+            float: left;
+            /*h1이 다른요소 왼쪽에 있다*/
+            background: brown;
+            margin: 5px 10px 5px 0px;
+            padding: 3px 10px;
+            /*상우하좌*/
+            font-size: 200%;/*fz200p*/
+            color:white;
+        }
+        span {
+            font-weight: bold;
+        }
+        p{
+            margin: 0;
+            width: 500px;
+            text-align: justify;/*taj*/
+            word-break:break-all;/*taj와 같이쓰고 단어 중간에 끊어 버리기*/
+            color: blueviolet;
+        }
+        p strong{
+            font-style: 120%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flo<br>at</h1>
+    <p><strong>강한 강조/단순하게 중요성없는 문자를 굵게 하는건 아님</strong>Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<b>when an unknown
+            printer took a galley of type </b> and scrambled it to make a type specimen book. <b>디자인으로 굵게</b>It has
+        survived not only five centuries, <span>but also the leap into electronic typesetting,</span> remaining
+        essentially unchanged</p>
+</body>
+
+</html>
