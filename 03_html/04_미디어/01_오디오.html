@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+    <style>
+        video{
+           width: 600px;
+           height: 338px;
+        }
+        iframe{
+            border: 1px solid #000;
+            width:600px;
+            height:338px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1bit:0,1
+        8bit=1cyte
+
+        깃허브 1개 레파지토리:2gb
+
+        6,846kb->7mb
+        저장공간:b
+        1000gb->1byte
+        1000byte->1kb
+        1000kb->1mb
+        1000mb->1tb
+
+        속성
+            src속성:오디오 파일 경로
+            autoplay:자동실행
+            muted:음소거
+            loop:무한 재생
+            controls:플레이제어
+            preload:미리 로드
+                auto:일부또는 전체를 미리로드-기본값
+                metadata:오디오의 메타데이터(길이,제목등)만 미리 로드 한다
+                none:미로 로드x
+    -->
+    <audio controls>
+        <source src="./../assets/Mas Cafe - Casa Rosa.mp3" type="audio/mp3" >
+    </audio>
+    <audio controls loop>
+        <source src="./../assets/Mas Cafe - Casa Rosa.mp3" >
+        your browser does not support the audio element(당신의 브라우저는 오디오 요소를 지원하지)
+    </audio>
+    <video controls loop >
+        <source src="./../../내마음대로 폴더/265501_tiny.mp4" >
+        your browser does not support the audio element(당신의 브라우저는 오디오 요소를 지원하지)
+    </video>
+    <!-- 
+        소스?파라미터 1&파라미터2....
+        autoplay=1  자동재생
+        muted=1     음소거
+        loop=1      반복재생
+        controls=   컨트롤바 숨김
+        start=30    30초부터 재생시작
+        modestbranding=1  유튜브 로고 최소화
+        rel=0        영상종류시 다른 채널 표기 방지(같은채널만 노출)
+    -->
+   <iframe  src="https://www.youtube.com/embed/m-4bq34eB2I?autoplay=18muted=1& controls=0&loop=1"title="[극장판 진격의 거인 완결편 더 라스트 어택] 한지 조에 캐릭터 PV 대공개 " ></iframe>
+</body>
+</html>
