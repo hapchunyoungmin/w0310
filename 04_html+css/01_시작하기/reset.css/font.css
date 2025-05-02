@@ -1,0 +1,7 @@
+@charset "utf-8";
+/*CDN은 Content Delivery Network의 약자로서 지리적인 제약 없이 전 세계 사용자에게 빠르고 안전하게 컨텐츠 전송을 할 수 있는 기술을 말한다.*/
+@import url(https://fonts.googleapis.com/css2?family=noto+sans+kr:wgt@100..900&display=swap);
+
+body{
+    font-family:"Noto Sans KR","sans serif";
+}
