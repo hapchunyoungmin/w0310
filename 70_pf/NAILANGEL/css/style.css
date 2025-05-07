@@ -1,0 +1,73 @@
+@charset "utf-8";
+body{
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+}
+header, .contents, footer{
+    width: 1340px;
+    margin: 0 auto;
+}
+header {
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:row;
+}
+nav{
+   
+    width: 600px;
+    height: 60px;
+    text-align: center;
+}
+a{
+    color: #333;
+}
+nav li{
+
+    display: inline-block;
+    width: 120px;
+    line-height: 60px;
+}
+nav .main li>a{
+    font-size: 18px;
+}
+.slide{
+    width: 1920px;
+    height: 350px;
+    background: yellow;
+    overflow: hidden;
+}
+.slide li:nth-of-type(2){
+    display: none;
+}
+.slide li:nth-of-type(3){
+    display: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contents{
+    height: 720px;
+    background: #1b3b86;
+}
+footer{
+    height: 120px;
+    background: wheat;
+}
+.abbr{
+    height: 120px;
+    width: 1140px;
+    background: yellow;
+}
+.right{
+   height: 120px;
+    width:200px;
+    background: lightslategray
+}
+.sns{}
+.famillysite{}
