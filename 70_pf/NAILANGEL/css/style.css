@@ -1,8 +1,16 @@
 @charset "utf-8";
+*{box-sizing: border-box;}
 body{
+    font: 16px/1.6;
     background-color: #fff;
     color: #333;
-    margin: 0;
+    margin: 0 auto;
+
+}
+
+body,ul,  h2,p{
+    margin: 0 auto;
+
 }
 header, .contents, footer{
     width: 1340px;
@@ -10,11 +18,9 @@ header, .contents, footer{
 }
 header {
     height: 100px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction:row;
 }
 nav{
    
@@ -24,6 +30,7 @@ nav{
 }
 a{
     color: #333;
+    text-decoration: none;
 }
 nav li{
 
@@ -39,6 +46,7 @@ nav .main li>a{
     height: 350px;
     background: yellow;
     overflow: hidden;
+    text-align: center;
 }
 .slide li:nth-of-type(2){
     display: none;
@@ -53,21 +61,98 @@ ul{
 }
 .contents{
     height: 720px;
-    background: #1b3b86;
+}
+.contents a{
+    color: #f5a5a5;
+}
+.link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    background: rgb(255, 255, 255);
+}
+.banner{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    background: lightpink;
+}
+.banner > div:first-of-type{
+    display: flex;
+
+}
+.banner .cont{
+    display: flex;
+}
+.banner .cont img{
+    margin-right: 16px;
+}
+.noge{
+    height: 450px;
+    background: lightgreen;
+    display: flex;
+}
+.notice{
+    width: 670px;
+    background: #e8ef29;
+}
+.gallery{
+    width: 670px;
+    background: #f5f5f5;
+    padding: 0 15px;
+}
+.gallery h2{
+    padding: 0 160px;
+}
+.gallery .inner{
+    display: flex;
+}
+.gallery h2{
+    color: #777;
 }
 footer{
     height: 120px;
-    background: wheat;
+    background: rgb(255, 219, 219);
+    display: flex;
+    color: #777;
+    padding: 0 32px;
 }
-.abbr{
+footer a{
+    color: #666;
+}
+.addr{
+    padding-top: 16px;
     height: 120px;
     width: 1140px;
-    background: yellow;
 }
 .right{
    height: 120px;
     width:200px;
-    background: lightslategray
+    background:
 }
-.sns{}
-.famillysite{}
+.sns{
+    padding-top: 24px;
+    height: 40px;
+    }
+
+.sns img{
+    width: 24px;
+}
+
+.sns li{
+        display: inline;
+    }
+    /*last-of-typed을 제뢰환 li요소의 끝태그 앞에 "ㅣ"추가*/
+.sns li:not(:last-of-type)::after{
+    content:"ㅣ";
+}
+
+
+.fs{
+    height: 60px;
+    padding-top: 24px;
+}
+
