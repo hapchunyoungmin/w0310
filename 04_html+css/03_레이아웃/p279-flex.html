@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            어떤 요소에 display지정하면
+            그요소는 플렉스 컨테이너가 되고
+            자식요소는 플렉스 아이템이 된다.
+
+            플랙스 컨테이너
+                flex-direaction     방향
+                flex-wrap           줄바꿈 방식
+                justify_content     align(정렬 맞춤)
+                align-items         정렬
+                align-content       정렬
+                flex-flow           정렬
+                 flex-direaction + flex-wrap = flex-flow 
+
+            플렉스 아이템
+                align-self
+                flex-glow       공간이 남았을때 항목의 크기를 늘려주는 
+                flex-shrink     공간이 부녹할때 항목의 크기를 줄여주는 
+                flex-basis      0 이라면 요소들이 늘어나지도 줄어들지도 않고 원래 크기를 가짐
+                order
+                flex
+
+                flex-glow+ flex-shrink+flex-basis= flex
+        */
+        div{
+            outline:1px solid red;
+        }
+        .flexbox{
+            /* 가로배치: witdh가 자식크기
+               hight 는 부모 크기*/
+            display: flex;
+            height: 300px;
+            background: #ccc;
+        }
+        .flexbox > div{
+            background: darkcyan;
+            margin: 10px;
+            /* flex 약어
+                flex_grow:1;
+                flwx-shrink:1;
+                flex-basis:0;
+
+                glow와 shrink가 1이면 basis는 어떤 값이든 같다.
+            */
+            flex:1 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <!-- 블록 레벨 요소는 width는 부모크기의 100%이며,줄바꿈이 되기 떄문에 세로(위에서 아래오)배치된다.-->
+        <div>flex-item</div>
+        <div>flex-item</div>
+        <div>flex-item</div> 
+    </div>
+    
+</body>
+</html>
