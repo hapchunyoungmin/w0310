@@ -105,8 +105,9 @@ ul{
     color:#444;
 }
 
-.notice tr td:nth-child(2){
-    padding-left:250px;
+.notice a{
+    display: inline-block;
+    width: 500px;
 }
 .gallery{
     width: 670px;
