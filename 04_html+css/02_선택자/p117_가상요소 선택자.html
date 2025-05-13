@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            /*:first-letter -> 요소의 첫 글자*/
+        p:first-letter{
+            font-size: 150%;
+        }
+        /* before  이전에(시작태그 바로 다음) 내용삽입
+            after   종료태그 바로 앞 내용삽입*/
+        p:before{
+            content: "*";
+            color: red;
+        }
+    </style>
+</head>
+<body>    <div class="box">
+        <p>div의 첫 번째 자식p</p>
+        <p>div의 두 번째 자식p</p>
+        <p>div의 세 번째 자식p</p>
+        <p>div의 네 번째 자식p</p>
+    </div>
+</body>
+</html>
