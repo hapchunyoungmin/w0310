@@ -76,4 +76,18 @@ ul{
 footer{
     height: 120px;
     background-color: rgb(0, 0, 0);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.blogo{
+    width: 200px;
+}
+.center_cont{
+    background: #533737;
+    width: calc(100% - 500px);
+}
+.fs{
+    background: #2f264d;
+    width: 300px;
 }
