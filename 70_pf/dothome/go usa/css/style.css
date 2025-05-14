@@ -1,8 +1,8 @@
 @charset "utf8";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /*
     함수의 형식
@@ -11,83 +11,114 @@
     calc(피연산자 - 피연산자)
 
 */
-body{
-    background: #fff;
-    color: #333;
-    font: 16px/1.5=6 '굴림', sans-serif;
+body {
+  background: #fff;
+  color: #333;
+  font: 16px/1.5=6 "굴림", sans-serif;
 }
-.wrap{
-    height: calc(100% - 120px);
-    display: flex;
-
+.wrap {
+  height: calc(100% - 120px);
+  display: flex;
 }
-a{
-    color: #333;
-    text-decoration: none;
+a {
+  color: #333;
+  text-decoration: none;
 }
-.logo{
-text-align: center;
+.logo {
+  text-align: center;
 }
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-header{
-    width: 200px;
-    background: rgb(153, 202, 216);
-    padding: 20px 0;
+header {
+  width: 200px;
+  background: rgb(153, 202, 216);
+  padding: 20px 0;
 }
-.nav{
-    padding: 20px ;
-    text-align: center;
+.nav {
+  padding: 20px;
+  text-align: center;
 }
-.nav li{
-    height: 60px;
-    margin-top: 8px;
-    line-height: 60px ;
-    border: 1px solid #000;
-
-
+.nav li {
+  height: 60px;
+  margin-top: 8px;
+  line-height: 60px;
+  border: 1px solid #000;
 }
-.nav a{
-    border: 1px solid red;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    transition: 0.3s;
+.nav a {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  transition: 0.3s;
 }
-.nav li a:hover{
-    background: #000;
-    color: #fff;
+.nav li a:hover {
+  background: #000;
+  color: #fff;
 }
-.contents{
-    width: 400px;
-    background: rgb(240, 246, 248);
+.contents {
+  width: 400px;
+  background: rgb(240, 246, 248);
 }
-ul{
-    list-style: none;
-}
-
-.slide{
-    width: calc(100% - 600px);
-    background: lightcoral;
-    /*  overflow: hidden; 은 콘텐츠가 넘어가면 영약밖에는 숨긴다.*/
-    overflow: hidden;
-}
-footer{
+/*배너*/
+.banner{
     height: 120px;
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    display: flex;
-    align-items: center;
+    background: lightcoral;
 }
-.blogo{
-    width: 200px;
+/*공지사항*/
+.notice{
+    height: calc(100% - 600px);
+    background:lightgreen;
 }
-.center_cont{
-    background: #533737;
-    width: calc(100% - 500px);
+/*갤러리*/
+.gallery{
+    height: 360px;
+    background: lightyellow;
 }
-.fs{
-    background: #2f264d;
-    width: 300px;
+/*바로가기 링크*/
+.link{
+    height: 120px;
+}
+ul {
+  list-style: none;
+}
+
+.slide {
+  width: calc(100% - 600px);
+  background: lightcoral;
+  /*  overflow: hidden; 은 콘텐츠가 넘어가면 영약밖에는 숨긴다.*/
+  overflow: hidden;
+}
+footer {
+  height: 120px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.blogo {
+  width: 200px;
+}
+.center_cont {
+  width: calc(100% - 500px);
+  padding-left: 60px;
+  color: #888;
+}
+.bmenu {
+  display: flex;
+  height: 40px;
+}
+.bmenu li {
+  margin-right: 16px;
+}
+.bmenu li:not(:last-child)::after {
+  content: "ㅣ";
+  margin-left: 16px;
+}
+.bmenu a {
+  color: #888;
+}
+.fs {
+  width: 300px;
 }
