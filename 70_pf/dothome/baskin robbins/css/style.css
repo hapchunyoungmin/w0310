@@ -1,0 +1,96 @@
+@charset "utf-8";
+body {
+  margin: 0 auto;
+  background: #fff;
+  color: #333;
+  font: 15px/1.6 "굴림", sans-serif;
+}
+a{
+  text-decoration: 0;
+  color: #333;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*img{
+    vertical-align: top;/*실무에서 씀
+}*/
+.wrap {
+  height: 850px;
+  display: flex;
+}
+header {
+  background: #f6f6f6;
+  width: 200px;
+}
+nav {
+  padding: 20px;
+  font-weight: bold;
+}
+nav a {
+  line-height: 60px;
+  margin-top: 4px;
+  display:block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid #000;
+  font-size: 18px;
+}
+nav a:hover{
+  background: rgb(255, 150, 167);
+  color: #fff;
+}
+.spotmenu a{
+  color: #777;
+}
+.spotmenu a:hover{
+  text-decoration: underline;
+  color: #333;
+}
+.spotmenu a:not(:last-child):after{
+  content:' |';
+  margin: 8px;
+}
+.container {
+  background: lightcyan;
+  width: calc(100% - 200px);
+}
+.slide {
+  height: 400px;
+}
+
+.banner {
+  height: 200px;
+  background: lightgrey;
+}
+.gnb {
+  text-align: center;
+}
+.tabs {
+  height: 250px;
+  background: lightpink;
+}
+footer {
+  background:grey;
+  height: 120px;
+  align-items: center;
+  display: flex;
+}
+.blogo{
+  width: 200px;
+}
+.right{
+  padding-left: 60px;
+}
+.bmenu {
+  display: flex;
+  height: 30px;
+}
+.bmenu li:not(:last-child):after{
+  content:'|';
+  margin: 8px;
+}
+
