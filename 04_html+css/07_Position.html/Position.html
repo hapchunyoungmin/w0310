@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        p{margin: 0;}
+        body{margin: 20px;}
+        .box{
+            width: 650px;
+            background: rgba(0,0,0,0.3);}
+            /*
+            box-sizing: content-box;(기본값)
+            노란색 박스의 가로 크기는?
+            길이+패딩
+            500px + 20px * 2 +1 *2 = 542px
+            */
+        p{
+            margin: 0;
+            font-weight: bold;
+            font-size: 10px;
+            padding: 20px;
+            width: 250px;
+            height: 100px;
+            box-sizing: border-box;
+            border: px solid red;
+            background: yellow;
+        }
+       .red{
+        background: magenta;
+       }
+       .green{
+        background: lime;
+        position: absolute;
+        left: 70px;
+        top: 50px;
+        z-index: 1
+       }
+       .blue{
+        background: cyan;
+        position:relative;
+        left: 100px;
+        top: 40px;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+        <p class="red">Lorem Ipsum </p>
+        <p class="green">Lorem Ipsum </p>
+        <p class="blue">Lorem Ipsum </p>
+    </div>
+  </body>
+</html>

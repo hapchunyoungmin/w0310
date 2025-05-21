@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*overflow:콘텐프 넘침처리
+            값:
+                visible: 기본값. 넘친 부분이 보임.
+                hidden: 넘친 부분이 보이지 않음.
+                scroll: 넘친 부분이 스크롤 가능함. 스크롤바가 항상 표시됨.
+                auto: 넘친 부분이 스크롤 가능함. 필요할 때만 스크롤바가 표시됨.
+        overflow-x: 수평 방향으로 넘친 부분 처리
+        overflow-y: 수직 방향으로 넘친 부분 처리
+        */
+        .a{
+            overflow:scroll;
+            height: 80px;
+            width: 550px;
+            border: 1px solid #000;
+        }
+        .b{
+            overflow:auto;
+            height: 80px;
+            width: 550px;
+            border: 1px solid #000;
+        }
+        .c{
+            overflow:hidden;
+            height: 80px;
+            width: 550px;
+            border: 1px solid #000;
+        }
+        .d{
+            overflow:visible;
+            height: 80px;
+            width: 550px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h3>서비스 이용약관</h3>
+    <p class="a">17조 (서비스의 변경 및 내용수정)<br>
+    ①Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+    ②Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+    ③Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p class="b">17조 (서비스의 변경 및 내용수정)<br>
+    ①Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+    ②Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+    ③Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p class="c">17조 (서비스의 변경 및 내용수정)<br>
+    ①Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+    ②Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+    ③Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p class="d">17조 (서비스의 변경 및 내용수정)<br>
+    ①Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+    ②Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+    ③Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</body>
+</html>

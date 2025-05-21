@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        padding: 0;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background: yellow;
+
+        animation-name: right-move;
+        animation-duration:5s;
+        animation-timing-function: linear;;
+        animation-iteration-count: 3;
+        animation-delay: 2s;
+      }
+       /* @keyframes right-move {
+          from {left:0}
+          to{left: 1000px;}
+        }*/
+      @keyframes right-move {
+        0% {left: 0;}
+        50% {left: 1000px;}
+        100% {left: 0;}
+      }
+    </style>
+  </head>
+  <body>
+    <!--요소가 한 스타일에서 점진적으로 다른 스타일로 변화하는것
+    애니메이션의 작업단위?키프레임
+
+    속기속성
+    animation: 이름 동작시간(여기까지는 꼭 씀) 반복횟수 지연시간 방향 속도 상태 끝난 후 상태;
+
+    개별속성
+    animation-name: 이름;
+        값: none(기본값), 이름
+        대소문자 구분
+    animation-duration: 동작시간; -> 단위: 1s(초)
+    animation-direction: 방향;
+        값:normal(기본값),reverse(역방향),alternate(정방향,역방향 반복),alternate-reverse(역방향,정방향 반복)
+    animation-delay: 지연시간;
+        값: 0s(기본값), 1s, 2s
+    animation-timing-function: 가속도;
+        값: linear(일정한 속도), ease(느리게 시작, 빠르게 끝남), ease-in(느리게 시작), ease-out(빠르게 시작), ease-in-out(느리게 시작, 느리게 끝남)
+    animation-fill-mode: 애니메이션이 끝난 후 상태;forwards;
+        값: none(기본값), forwards(애니메이션이 끝난 후 마지막 키프레임 상태 유지), backwards(애니메이션이 시작되기 전 첫 번째 키프레임 상태 유지), both(애니메이션이 끝난 후 마지막 키프레임 상태 유지, 애니메이션이 시작되기 전 첫 번째 키프레임 상태 유지)
+
+    @keyframes 키워드
+     form{속성: 값;}
+     to{속성: 값;}
+
+     position: absolute; -> 부모요소를 기준으로 위치를 잡음
+     position: relative; -> 부모요소를 기준으로 위치를 잡음
+    position: fixed; -> 브라우저를 기준으로 위치를 잡음
+    -->
+    <div class="box"></div>
+  </body>
+</html>

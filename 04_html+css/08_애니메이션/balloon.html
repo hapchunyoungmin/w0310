@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+              position: absolute;
+        }
+        .balloon {
+            width: 116px;
+            height: 160px;
+            position: absolute;
+            animation: balloon 1s alternate infinite ease-in;
+        }
+        @keyframes balloon {
+            0% {
+                top: 0;
+            }
+        
+            100% {
+                top:-30px;
+            }
+        }
+        .cloud1 {
+            
+            right:0;
+            top:20px;
+            width: 238px;
+            height: 111px;
+            animation: cloud1 5s forwards;
+        }
+        .cloud2 {
+            left:0;
+            top: 200px;
+            width: 176px;
+            height: 100px;
+            animation: cloud2 4s 1s forwards;
+        }
+        @keyframes cloud2 {
+            0% {
+                left:0;
+            }
+        
+            100% {
+                left:300px;
+            }
+        }
+        @keyframes cloud1 {
+            0% {
+                right:0;
+            }
+        
+            100% {
+                right:300px;
+            }
+        }
+    </style>
+ 
+    </head>
+</head>
+<body>
+    <div class="balloon">
+        <img src="./image/balloon.png" alt="">
+    </div>
+    <div class="cloud1">
+        <img src="./image/cloud1.png" alt="">
+    </div>
+    <div class="cloud2">
+        <img src="./image/cloud2.png" alt="">
+    </div>
+
+    
+</body>
+</html>

@@ -1,13 +1,21 @@
 @charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0 auto;
   background: #fff;
   color: #333;
   font: 15px/1.6 "굴림", sans-serif;
 }
-a{
+a {
   text-decoration: 0;
   color: #333;
+}
+.logo{
+  padding: 20px 0 15px 0px;
 }
 ul {
   margin: 0;
@@ -32,26 +40,26 @@ nav {
 nav a {
   line-height: 60px;
   margin-top: 4px;
-  display:block;
+  display: block;
   width: 100%;
   height: 60px;
   line-height: 60px;
   border: 1px solid #000;
   font-size: 18px;
 }
-nav a:hover{
+nav a:hover {
   background: rgb(255, 150, 167);
   color: #fff;
 }
-.spotmenu a{
+.spotmenu a {
   color: #777;
 }
-.spotmenu a:hover{
+.spotmenu a:hover {
   text-decoration: underline;
   color: #333;
 }
-.spotmenu a:not(:last-child):after{
-  content:' |';
+.spotmenu a:not(:last-child):after {
+  content: " |";
   margin: 8px;
 }
 .container {
@@ -60,37 +68,82 @@ nav a:hover{
 }
 .slide {
   height: 400px;
+  overflow: hidden;
 }
-
+.link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 300px;
+  background: palevioletred;
+  text-align: center;
+}
+.link ul {
+  margin: 16px 0 0 0;
+}
+.link span {
+  display: block;
+  color: rgb(0, 0, 0);
+}
 .banner {
   height: 200px;
-  background: lightgrey;
+  background: rgb(245, 236, 220);
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.banner .cont {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.banner .cont div{
+  padding-left: 40px;
+  color:navy
+}
+.banner .btn {
+  padding: 80px 16px 0 0;
 }
 .gnb {
   text-align: center;
 }
 .tabs {
   height: 250px;
-  background: lightpink;
+  background: rgb(230, 221, 193);
+
+  line-height: 2;
+  padding: 35px 16px
+}
+.tabs h3{
+  width: 100% - 200px;
+}
+.tabs a{
+display: flex;
+justify-content:space-between;
+border-bottom: 1px solid #8b8b8b;
+}
+.tabs a:hover{
+  background:rgb(125, 80, 20);
+  color:#fff;
 }
 footer {
-  background:grey;
+  background: grey;
   height: 120px;
   align-items: center;
   display: flex;
 }
-.blogo{
+.blogo {
   width: 200px;
 }
-.right{
+.right {
   padding-left: 60px;
 }
 .bmenu {
   display: flex;
   height: 30px;
 }
-.bmenu li:not(:last-child):after{
-  content:'|';
+.bmenu li:not(:last-child):after {
+  content: "|";
   margin: 8px;
 }
-

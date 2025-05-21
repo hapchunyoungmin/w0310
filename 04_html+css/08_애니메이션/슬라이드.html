@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            width: 500px;
+            height: 150px;
+            background: rgb(255, 0, 0);
+            overflow: hidden;
+        }
+        .slide ul{
+            position: relative;
+            display: flex;
+            width: 400%;
+            height: 100%;
+            animation: slide 8s infinite;
+            
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            font-size: 100px;
+            width: 25%;
+        }
+        @keyframes slide {
+            0% {left: 0;}
+            10% {left: -100%;}
+            33% {left: -100%;}
+            43% {left:-200%;}
+            66% {left:-200%;}
+            76% {left: -300%;}
+            99.99% {left: -300%;}
+            100% {left: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+       <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+       </ul>
+    </div>
+    
+</body>
+</html>
