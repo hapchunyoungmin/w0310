@@ -28,7 +28,9 @@
                             fixed -> 패럴렉스 스크롤
 
                     background-size: 가로 세로;
-                        값: auto(기본값), contain, cover
+                        값: auto(기본값)
+                             contain:잘림x 빈공간o
+                             cover:잘림o 빈공간x->패럴렉스 스케일
                             숫자(단위: px, %, em, rem)
 
                 background-clip: 배경의 영역의 시작점
@@ -43,12 +45,20 @@
             속기 속성
                 background: color|image [repeat] [position][/size] [attachment] [origin] [clip];
         */
-        body {
+        body{
+            background: url()
+        }
+        div{
+            width: 800px;
+            height: 500px;
             background-color: yellow; /* bgc */
             background: yellow; /* bg */
             background-image: url(figma.png),url(don-kaveen-F0CTHqaZth0-unsplash.jpg);
+            padding: 20px;
+            border: 10px solid black;
+             background-size: auto,contain;
             background-repeat: no-repeat; /* bgr */
-            background-position: 0 0; /* bgp */
+            background-position:center 100%; /* bgp */
         }
     </style>
 </head>
