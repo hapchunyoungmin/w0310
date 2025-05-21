@@ -1,16 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타벅스</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background: #333;
+        height: 120px;
+      }
+      .sec {
+        height: 800px;
+      }
+      .s1 {
+        background: lightgoldenrodyellow;
+      }
+      .s2 {
+        background: lightgray;
+      }
+      .s3 {
+        background: url(./starbucks\ \(2\).png) no-repeat 50% 50%/cover fixed;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      /*
+        flex-direction:row;(기본값)
+        주축 :justify-content
+        교차축:align-items
+        flex-direction:column;
+        주축 :align-items 
+        교차축:justify-content
+      
+    */
+    body{
+        font: 15/1.6 "Noto Sans KR", sans-serif;
+    }
+    a{
+        color:#333
+    }
+      .s3 h2 .s3 p{
+        display: flex;
+        flex-direction: column;
+      }
+      .s3 .txt p {
+       margin: 48px 0 36px ;
+
+      }
+      .s3 .txt a{
+        width: 126px;
+        height: 38px;
+        border-radius: 3px;
+        border: 2px solid #fff;
+        text-align: center;
+        color: #fff;
+        line-height: 2;
+        align-items: flex-end;
+        margin-right: 90px;
+        
+      }
+      .s3 .txt a:hover {
+        background: #fff;
+        color: #333;
+        transition: 0.8s;
+      }
+      .s4 {
+        background: lightpink;
+      }
+      footer {
+        background: #333;
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
     <header></header>
-    <section>1</section>
-    <section>2</section>
-    <section>3</section>
-    <section>4</section>
- 
-</body>
+    <section class="sec s1"><h2>1번째 섹션</h2></section>
+    <section class="sec s2"><h2>2번째 섹션</h2></section>
+    <section class="sec s3">
+      <!--제목,설명-->
+      <div class="txt">
+        <h2><img src="./pick.png" alt="pick" /></h2>
+        <p><img src="./다양한 메뉴.png" alt="menu" /></p>
+        <!--고스트 버튼 -->
+        <a href="#">자세히 보기</a></div>
+      </div>
+      <!--이미지 콘텐츠-->
+      <div class="cont">
+        <img src="./starbucks desert.png" alt="desert" />
+      </div>
+    </section>
+    <section class="sec s4"><h2>4번째 섹션</h2></section>
+    <footer></footer>
+  </body>
 </html>
