@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    img{
+      vertical-align: top;
+    }
+    li {
+      list-style: none;
+    }
+    .slide {
+      left: 100px;
+      top: 300px;
+      position: relative;
+      width: 1200px;
+      height: 300px;
+      overflow: hidden;
+    }
+    .slide ul {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    
+      animation: slide 8s infinite;
+    }
+    .slide li{
+      height: 25%;
+      
+    }
+    @keyframes slide{
+        0%{top:0%}
+        10%{top:-100%}
+        33%{top:-100%}
+        43%{top:-200%}
+        66%{top:-200%}
+        76%{top: -300%}
+        99%{top: -300%}
+        100%{top:0%}
+    }
+    .slide li{
+        flex: 0 0 100%;
+    }
+    
+
+    ul {
+      list-style: none;
+    }
+  </style>
+  <body>
+    <슬라이드>
+    <div class="slide">
+      <ul>
+        <li>
+          <a href="#"><img src="./image/slide (2).jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./image/slide (1).jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./image/slide (3).jpg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./image/slide (2).jpg" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
