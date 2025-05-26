@@ -10,17 +10,24 @@
         background: #07d;
         text-align: center;
         display: block;
-         margin: 10px;
+        margin: 10px;
     }
-    .radius1{
-        width: 230px;
-       
+    #radius1{
+        width: 230px;  
+        /*가로반지름 / 세로반지름
+         15px 15px 15px 15px / 70px 70px 70px 70px
+        */
+        border-radius:15px / 70px;
+    }
+    #radius2{
+        width: 490px;
+        border-radius:15px  70px 15px 70px / 70px 15px 70px 15px;
     }
     </style>
     
 </head>
 <body>
-    <span class="radius radius1">border-redius:20px</span>
-    <span class="radius radius2">border-redius:15 70 15 70px</span>
+    <span class="radius radius1" id="radius1">border-redius:20px</span>
+    <span class="radius radius2" id="radius2">border-redius:15 70 15 70px</span>
 </body>
 </html>
