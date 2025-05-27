@@ -1,24 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>데이터 타입</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        /*
-        데이터 타입
-            1.숫자데이터(number)
-            2.
-        */
-    var num1 = 10;// 정수
-    var num2 = 10.5;// 소수
-    var num3 = 1e+2;// 지수(exponert) 1 * 10^2
+              /*
+              데이터 타입
+                  1.숫자데이터(number)
+                  2.객체
 
-    console.log(num1);
-    console.log(num2);
-    console.log(num3);
+              원시 데이터타입
+                  1.숫자:10
+                  2.문자열:"java"
+                  3.불리언:true,false->예약어(키워드)
+                  4.undefined:정의되지 않은 상태/값을 할당하지 않았을때
+                  5.null:비어있는 값
+                  6.symble
+                  7.bigint
+                  ...
+
+              객체(참조)데이터 타입
+                  1.함수(function)(){}
+                  2.객체(object){}
+                  3.배열(array[]
+                  4.날자(date)
+                  ...
+              */
+          var num1 = 10;// 정수
+          var num2 = 10.5;// 소수
+          var num3 = 1e+2;// 지수(exponert) 1 * 10^2
+          // 숫자가 아닌 문자는 10이다.
+          /*
+          +는 문자열 나열
+          1+2->3
+          "일"+"이" ->"일이"->문자열 연결 연산자
+          "1"+"이" -> "1이"
+          "일"+2 -> "일2"
+          */
+         console.log("1+2", 1 + 2); // 숫자 더하기
+         console.log("일"+"이");// 문자열 연결
+          console.log("1"+"이");// 문자열 연결
+          console.log("일"+2);// 문자열 연결
+
+          console.log(num1);
+          console.log(num2);
+          console.log(num3);
+      // ""또는 ''출력
+          var str1 = "자바스크립트"; // 문자열
+          var str2 = "문자는 '문자'"; // 문자열
+          // 이스케이프 문자
+          var str3= '문자는 \'문자\'';
+          // 영어키로 돈 키 \
+        document.write(str1+"<br>");
+        document.write(str2);
+        document.write(str3+"<br>");
+    
+        alert('자바스크립트\n 제이쿼리')
+
+        var bool1 = ( 5 > 4 );
+        // ( 5 > 4)에서 ()제거 가능 -> 5 > 4
+        var bool2 = ( 5 < 4 );
+
+        document.write(bool1+'<br>');
+        document.write(bool2+'<br>');
+        /* 
+        document.write(bool1);
+        document.write('<br>');
+        document.write(bool2);
+        와 같다
+        */
+        /* 
+        비교 연산자결과는 true,faulse
+        비교 연산자:> , < ,>= ,<= ,==, ===, != ,!==
+        */
+        var bool3 = 0;
+        var bool4 = 1;
+        // 객체지향 프로그램 언어<java,python, c++,javaScript>
+        // 객체,클레스,생성자,함수,매서드,속성.....
+        // Boolean(데이터)->데이터를 볼값으로 생성한다
+        // 0만 false,
+        document.write(Boolean(bool3)); // false
+        document.write('<br>');
+        document.write(Boolean(bool4)); // true
+        // 객체 데이터 표시할때 {}로 표기한다
+        var obj = {};
+        obj.name = "홍길동";
+        obj.age;
+        document.writw('<br>');
+        document.write(obj);
     </script>
-</body>
+  </body>
 </html>
