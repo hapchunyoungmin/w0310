@@ -58,7 +58,7 @@
         document.write(str2);
         document.write(str3+"<br>");
     
-        alert('자바스크립트\n 제이쿼리')
+        // alert('자바스크립트\n 제이쿼리')
 
         var bool1 = ( 5 > 4 );
         // ( 5 > 4)에서 ()제거 가능 -> 5 > 4
@@ -82,9 +82,36 @@
         // 객체,클레스,생성자,함수,매서드,속성.....
         // Boolean(데이터)->데이터를 볼값으로 생성한다
         // 0만 false,
+        
         document.write(Boolean(bool3)); // false
         document.write('<br>');
         document.write(Boolean(bool4)); // true
+      document.write('<br>');
+        document.write('bool1='+bool)
+
+      var bool5;
+      var bool6; = null;
+      document.write("Boolean(bool5)="+ Boolean(boll5));
+      document.write('<br>');
+      document.write("Boolean(bool6)=" +Boolean(boll6));
+
+
+        // null -빈(empty) 상태(초기화),데이터를 할당 하였으나 값이 존재 x
+      var temp10= 10;
+      temp10=null;
+      document.write('<br>');
+      document.write(temp10);
+      var gnb= document.getelEmentBYid('gnb')
+      /* 
+      document는 문서 객체
+      .getElementById()는 객체의 메서드(method,동작,방법)
+      get 얻다, 가져오다
+      Element dyth
+      by ~의
+      id -> HTML의 id 속성
+      .메서드(피라미터,매개변수...)
+      HTML 문서에서는 id가 gnb의 요소를 가져온다.
+      */
         // 객체 데이터 표시할때 {}로 표기한다
         var obj = {};
         obj.name = "홍길동";
