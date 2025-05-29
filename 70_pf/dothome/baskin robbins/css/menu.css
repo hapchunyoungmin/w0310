@@ -1,0 +1,23 @@
+@charset "unf-8";
+* {
+}
+body{
+    font:15px/1.6 "굴림", snas-serif;
+    color:#333;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+.gnb .sub a{
+    font-size:14px;
+    font-weight: normal;
+}
+.gnb .main>li>a{
+ font-size: 18px;
+ font-weight: bold;
+ color:#999;
+}

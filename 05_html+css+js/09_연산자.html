@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>연산자</title>
 </head>
 <body>
+    <script>
+        var num = 10;
+        var str = '문자';
     
+        // ""이나 ''이 없으면 내용이 아니라 선언을 아직 안한 연산자
+        // document.write(typeofnum);
+        // 연산자+ 변수
+        // 결과:number
+        document.write(typeof num + '<br>');
+        // 결과:string
+        document.write(typeof str + '<br>');
+
+        // number
+        var num1 = 10;
+        var num2 = 10.2;
+        var num3 = 1e+2;
+        document.write(num1 + ',' + num2 + ',' + num3)
+        // string
+        var str1 = '문자',
+            str2 = "문자는 '문자'",
+            str3 = "문자는 '문자'",
+            // 이스케이프 문자
+            // \\,\',\",\n,\t,......
+            str4 =  'you\'re too smart...';
+        document.write(str1 + ',' + str2 + ',' + str3 + ',' + str4 + '<br>')
+        // boolean
+        var com1 = (5 > 4),
+            com2 = (5 < 4);
+        document.write(com1 + ',' + com2 + '<br>')
+        // undifind
+        var storage;
+        document.write(storage + '<br>')
+        // null
+  
+
+    </script>
 </body>
 </html>

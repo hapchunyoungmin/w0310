@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+    /*
+    개별속성
+    transition-propertiy
+    transition-duration:1s
+    transition-time-fuction
+        값: 가속:ease(기본값) ->cubic-bezier(0.25,0.1,0.25,0.1)
+                ease-in(점점빨라짐)-> cubic-bezier(0.42,0.1,1)
+                ease-out(점점 느려짐)->cubic-bezier(0,0,0.58,1)
+                ease-in-out(느림->빠름->느림)->cubic-bezier(0.42,0,0,58,1)
+            등속:inear
+            cubic-bezier(x1,y1,x2,y2)
+    transition-delay:1s
+    속기 속성
+    transition
+        지정한 시간동안 부드럽게 속성을 변경한다
+
+    참고로 display,position,z-index,overflow,visivility,font-familly,box-sizing적용되지 않는다.
+    */
+    li{
+        list-style: none;
+    }
+    a{  display: block;
+        height: 20px;
+        width: 300px;
+        margin-bottom: 2px;
+        padding: 10px;
+        text-decoration: none;
+        color:#333;
+        background: #abc;
+
+        transition-property: width color;
+        transition-duration: 1s ,1s;
+
+        transition:all 1s;
+        transition:1s
+        }
+    a:hover{
+        color:#c00;
+        width: 450px;
+    }
+    </style>
+</head>
+<body>
+    <h2>Moving Menu</h2>
+    <ul class="menu">
+        <li><a href="#">company</a></li>
+        <li><a href="#">product</a></li>
+        <li><a href="#">service</a></li>
+        <li><a href="#">customer support</a></li>
+        <li><a href="#">communtiy</a></li>
+    </ul>
+</body>
+</html>
