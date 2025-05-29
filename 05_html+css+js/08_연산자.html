@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        /* 
+      /* 
         연산자
         피연산자 개수에 따라 아래 처럼 말고도 
             1.단항:피연산자1개-> ++, --,!
@@ -26,7 +26,123 @@
 
         비교연산의 결과는 true 또는 false이다.
         논리연산의 결과는 true 또는 false이다.
+
+        산술연산자
+            + 덧셈 또는 문자열 연결
+            - 뺼
+            * 곱하기
+            / 나누기
+            % 나머지
+            ++증가
+            --감소
+
+        연산의 우선순위
+            1.()
+            2.++ , -- ,  ||
+            3.* ,/
+            4.+ , -
+            5.> , < , >== , <==
+            6.=== , !==
+            7.&&
+            8.||
+            9.= , += , -= , *= , /= , %=
         */
+
+      var a = 9;
+      var b = 2;
+
+      document.write(a + b + "<br>");
+      document.write(a - b + "<br>");
+      // 곱셈
+      document.write(a * b);
+      document.write("<br>");
+      // 나눗셈
+      document.write(a / b);
+      document.write("<br>");
+      // 나머지
+      document.write(a % b);
+      document.write("<hr>");
+      // 1씩 증가(후위연산 -> 출력후 증가)
+      document.write(a++);
+      document.write("<br>");
+      // (1. a=9 2.a=11 3.a=12 4.a=14 )
+      document.write(a++ + a++ + a++ + a++);
+      document.write("<br>");
+      document.write(a);
+      // 1씩증가(전위 연산 -> 증가후 출력)
+      document.write("<br>");
+      document.write(++b);
+    //대입   ---------------------------------------------
+      document.write("<hr>");
+/* 
+    = 오른쪽 변수에 값을 왼쪽 변수에 대입
+    +=더한 후 대입
+    -=뺀후대입
+    *=곱한 후 대입
+    /=나눈 후 대입
+    %=나머지를 구한 후 대입
+*/
+// nan:not a number
+//()->연산의 우선 순위를 바꾼다.
+      document.write((a = b) + "<br>");//a는 9 b=3
+      document.write((a += b) + "<br>");/*a = a + b a는6 */
+      document.write((a -= b) + "<br>");/*a = a - b a는 3*/
+      document.write((a *= b )+ "<br>");/*a = a * b a는 9*/
+      document.write((a /= b) + "<br>");/*a = a / b* a는3*/
+      document.write((a %= b) + "<br>"); /*a = a % b*/
+     //비교-------------------------------------------
+        document.write("<hr>");
+        /* 
+        >   크다
+        <   작다
+        >=  이상(크거나 같다)
+        <=  이하(작거나 같다)
+        ==  같다/데이터 타입 비교 x
+        === 같다/데이터 타입도 비교 o
+        !=  같지 않다/데이터 타입 비교 x
+        !== 같지 않다/데이터 타입도 비교 o
+
+        비교연산자의 결과는 true 아니면 false
+        */
+       //a=0/b=3
+        document.write('a = ' + a + '<br>');//''-문자열 a는 연산자
+        document.write('b = ' + b + '<br>');//''-문자열 a는 연산자
+        document.write((a > b) +'<br>');
+        document.write((a < b )+'<br>');
+        document.write((a >= b) +'<br>');
+        document.write((a <= b) +'<br>');
+        document.write((a == b )+'<br>');
+        document.write((a === b) +'<br>');
+        document.write((a != b) +'<br>');
+        document.write((a !== b) +'<br>');
+
+    // 논리 연산자
+        document.write("<hr>");
+        /* 
+            &&  그리고(피연산자 모두가 true일때 ->true/피연산자 중 하나가 false일때 -> faulse)
+            ||  또는(피연산자 결과중 하나 이상이 true일때 ->true/아니면  -> faulse)
+            !   부정(피연산자 결과가 true면 ->false /결과가 false일때 ->true)
+
+            주로 논리 연산자는 비교 연산자와 함께 사용한다.
+            논리 연사자의 결과도 true 아니면 false
+
+            비교 연산자가 논리 연산자 보다 우선 순위가 높다.
+
+            숫자 0은 boolean/boolean=0=false 즉,Boolean은 false
+            0=false 
+        */
+        
+        document.write((a > b && a > b) +'<br>');
+        document.write((a > b || a > b )+'<br>');
+        document.write((!a > b) +'<br>');
+        
+        document.write('<br>');
+        
+        var c= true
+        document.write((c && c) +'<br>');
+        document.write((c || c )+'<br>');
+        document.write((!c) +'<br>');
+    
     </script>
-</body>
+  </body>
 </html>

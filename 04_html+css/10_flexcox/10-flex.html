@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        /*
+        개별 속성
+        flex: grow 0;
+            값:1이면 늘어남,0이면 늘어나지 않음
+        flex: shrink 1;
+            값:1이연 줄어듬,0이면 줄어들지 않음
+        
+        속기속성
+            flex:[grow][shrink][basic]->순서 있다
+
+            flex:1;
+            flex:1 0 0%;
+        */
+        .flexbox{
+            background: lightgrey;
+            display: flex;
+            height: 300px;
+        }
+        .flexbox div{
+            flex:0 1 300px;
+            /*
+            width: 200px; = flex: 0 1 auto;
+            flex: 1; = flex:1 1 0%;
+            flex: 0; = flex:0 1 0%;
+            flex:200px; = flex:1 1 200px;
+            flex:200; = flex: 200 1 0&;
+            */
+            background: darkcyan;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+    </div>
+</body>
+</html>

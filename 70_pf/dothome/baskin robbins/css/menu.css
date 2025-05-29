@@ -5,8 +5,20 @@ body{
     font:15px/1.6 "굴림", snas-serif;
     color:#333;
 }
+header{
+    margin: 0 auto;
+    width: 1320px;
+    height: 100px;
+    background: rgb(234, 231, 231);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 ul{
     list-style: none;
+    padding-left: 0;
+    padding: 0;
 }
 a{
     text-decoration: none;
@@ -17,7 +29,65 @@ a{
     font-weight: normal;
 }
 .gnb .main>li>a{
- font-size: 18px;
- font-weight: bold;
- color:#999;
+    font-size: 18px;
+    font-weight: bold;
+    color:#999;
+}
+
+/*1depth*/
+.main{
+    display: flex;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: pink ;
+       transition: 3s;
+}
+.main li{
+    width: 150px;height: 30px; 
+    text-align: center;
+}
+.main li:hover{
+    background: hsla(315, 100%, 51%, 0.764);
+    
+}
+.main > li{
+    width: 150px;
+    height: 30px;
+    
+    background: lightpink;
+    
+}
+.main>li>a{
+    display: block;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.main>li> a:hover {
+    color: #fff;  
+}
+main>li:hover .sub{
+ height: 150px;
+
+}
+/*2depth*/
+
+
+/*서브*/
+.sub{
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+ 
+    background:rgb(254, 206, 213);
+}
+.sub li:hover{
+    background: #222;
+    cursor: pointer;
+ 
+}
+.sub li a:hover{
+   color: #fff;
 }
