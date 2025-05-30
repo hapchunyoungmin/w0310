@@ -8,7 +8,7 @@
   <body>
     <h1>메인 페이지</h1>
     <label for="pw">비밀번호:</label>
-    <input type="text" id="pw" >
+    <input type="password" id="pw" >
     <button type="submit" id="login_btn">로그인</button>
     <script>
       /*
@@ -64,8 +64,7 @@
       //  선언문
        var pw;
        var logein_btn = document.getElementById('login_btn');
-
-       var result = "잘못 입력하셨습니다. 다시한번 입력해주세요.";
+       var isPasswordIncorrect = "잘못 입력하셨습니다. 다시한번 입력해주세요.";
        
        // 로그인 버튼을 실행할때
        login_btn.onclick =function(){
@@ -74,18 +73,24 @@
            // 제어문
            if (pw === '1234') {
             console.log('맞았오')
-               // location.href = "https://naver.com";
+               location.href = "https://naver.com";
             } else {
                 // alert(result);
             console.log('틀렸어')
+            alert(isPasswordIncorrect)
             }
             // 출력
+            
             console.log(pw);
-        };
+       };
+
+     //호이스팅
+     ㄷ
       // 실행문
       // window.alert(result)
       // document.write(result);
        document.getElementById('pw').value = '';
+     };
     </script>
   </body>
 </html>
