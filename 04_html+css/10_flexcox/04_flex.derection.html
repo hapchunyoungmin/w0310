@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+        display:flwx;를 ㅈㅣ정하면 이 요소는 플렉스 컨테이너가 되며,자식은 플렉스 아이템이된다.
+            
+             플렉스 컨테이너
+                flex-derection
+                    값:row(기본값,행:오->왼)
+                       colum(열: 위-> 아래)
+                       reverse(역 거꾸로)
+        */
+
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        /*플렉스 컨테이너*/
+        .flexbox{
+            height: 280px;
+            background: #ccc;
+            display: flex;
+
+            padding-top:10px;
+        }
+        /*플렉스 아이템*/
+        .flexbox div{
+            background: darkviolet;
+            /*첫번쨰 요소margin-top의 마진의 부모 요소밖으로 생김*/
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="flexbox"><!--.flexbox>div{child-$}*3-->
+    <div>child-1</div>
+    <div>child-2</div>
+    <div>child-3</div>
+</div>
+</body>
+</html>

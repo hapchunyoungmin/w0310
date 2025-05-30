@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loge-in</title>
+  </head>
+  <body>
+    <h1>메인 페이지</h1>
+    <label for="pw">비밀번호:</label>
+    <input type="text" id="pw" >
+    <button type="submit" id="login_btn">로그인</button>
+    <script>
+      /*
+      html 속성(attribute)
+      css 속성(property)
+
+     객체(object):
+            Window
+            |
+             document
+            |
+            <HTML>
+            |
+            <body>
+            |
+            <input>[object HTMLInputElement]->DOM객체
+
+
+    [object HTMLInputElement]->DOM객체
+    매서드(METHOD):getElemrntById
+    속성(proptery):value
+
+    함수선언
+        1.변수=익명함수->이름없는 함수
+        2.선언적함수 -> 이름없는 함수
+
+    함수 호출(call)
+        함수명()
+        변수명()
+
+    익명함수 형식
+        var 변수=익명 함수; function 함수명(){};
+        let 변수
+        const 변수
+
+    선언적 함수 선언
+        function 함수명(){} /이친구는 ;쓰지 않음
+
+
+    이벤트->사건발생,인테렉티브(상호작용)
+        -윈도우:load(창 킬때)
+        -마우스:click,...
+        -키보드
+    
+    이벤트 형식:
+        이벤트가 발생하면 익명함수가 실행된다.
+        객체.on이벤트명 = 익명함수
+        객체.매소드
+
+    var pw = document(객체).getElementById('pw');
+    javascript에 iput의 요소로 쓰인 매소드 요소를 가져와 연결
+      */
+      //  선언문
+       var pw;
+       var logein_btn = document.getElementById('login_btn');
+
+       var result = "잘못 입력하셨습니다. 다시한번 입력해주세요.";
+       
+       // 로그인 버튼을 실행할때
+       login_btn.onclick =function(){
+           // 실행문
+           pw = document.getElementById('pw').value;
+           // 제어문
+           if (pw === '1234') {
+            console.log('맞았오')
+               // location.href = "https://naver.com";
+            } else {
+                // alert(result);
+            console.log('틀렸어')
+            }
+            // 출력
+            console.log(pw);
+        };
+      // 실행문
+      // window.alert(result)
+      // document.write(result);
+       document.getElementById('pw').value = '';
+    </script>
+  </body>
+</html>
