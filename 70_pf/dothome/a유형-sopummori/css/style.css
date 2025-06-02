@@ -1,0 +1,280 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  font: 16px/1.6 "돋움", sans-serif;
+  background: #fff;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  vertical-align: top;
+}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*헤더*/
+header {
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  background: lightgoldenrodyellow;
+}
+/*로고*/
+.logo {
+  width: 200px;
+  height: 40px;
+}
+.logo a{
+  text-align: center;
+}
+/*네비게이션*/
+header {
+  position: relative;
+
+  height: 100px;
+  margin: 0 auto;
+  background: lightgoldenrodyellow;
+}
+
+/* GNB */
+/* 폰트위계 */
+/* 타이틀 텍스트(title text), 바디 텍스트(body text), 메뉴 텍스트(menu text)의 각 글자체/굵기/색상/크기 등을 적절하게 설정하여 사용자가 텍스트간의 위계질서(hierarchy)를 직관적으로 알 수 있도록 한다. */
+
+/* 메인 */
+.gnb .main > li > a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 서브 */
+.gnb .sub a {
+  font-size: 14px;
+}
+
+.gnb {
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+
+/* 1depth: 메인 메뉴 */
+.main {
+  display: flex;
+}
+.gnb .main > li > a {
+  background: rgb(252, 227, 162);
+}
+
+.main > li > a {
+  display: block;
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.gnb .main > li > a:hover {
+  background: #64523d;
+  color: #fdfdfd;
+}
+
+.main > li:hover .sub {
+  height: 150px;
+}
+
+/* 2depth: 서브 메뉴 */
+.sub {
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+  background: #e4e08d;
+}
+.sub::before {
+  display: block;
+  content: "";
+  height: 10px;
+}
+.sub li a {
+  padding: 4px 8px;
+}
+.sub > li:hover {
+  background: #c8c96b;
+}
+/*슬라이드*/
+.slide {
+  height: 300px;
+  overflow: hidden;
+}
+.slide ul {
+  position: relative;
+  height: 300%;
+  animation: slide 6s infinite;
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  33% {
+    top: -100%;
+  }
+  43% {
+    top: -100%;
+  }
+  66% {
+    top: -200%;
+  }
+  99.99% {
+    top: -200%;
+  }
+  100% {
+    top: 0;
+  }
+}
+/*콘탠츠*/
+.contents {
+  height: 200px;
+  padding-top: 10px;
+  display: flex;
+}
+/*공지사항/갤러리*/
+.tabs {
+  height: 200px;
+  width: 400px;
+}
+/* 탭 */
+.tabs {
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+.tabs input {
+  display: none;
+}
+
+.tabs label {
+  display: inline-block;
+  padding: 2px 16px;
+  background: lightgoldenrodyellow;
+  color: #555;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.tabs input:checked + label {
+  background: rgb(197, 176, 124);
+  color: #555;
+}
+
+.tabs .tab-content {
+  position: absolute;
+  display: none;
+  width: 400px;
+  height: 160px;
+  padding: 15px;
+  border-top: solid 1px rgb(197, 176, 124);
+}
+
+.tabs input:checked + label + .tab-content {
+  display: block;
+}
+
+/* 공지사항 */
+.tab .tab1 li {
+}
+
+.tabs .tab1 {
+  line-height: 2;
+}
+.tabs .tab1 a {
+  display: inline-block;
+  width: 280px;
+  font-size: 13px;
+}
+.tabs .tab1 a:hover {
+  text-decoration: underline;
+}
+.tabs .tab2 img{
+  
+  border: 1px solid transparent;
+}
+.tabs .tab2 a:hover{
+  box-shadow: 0px 0px 2px 2px pink;
+}
+
+/*배너*/
+.banner {
+  width: 400px;
+  height: 200px;
+  padding-left: 10px;
+}
+
+/*바로가기 링크*/
+.link {
+  padding-left: 10px;
+  width: 400px;
+  height: 200px;
+}
+
+/*푸터*/
+footer {
+  height: 100px;
+  background: #64523d;
+  display: flex;
+}
+/*아래로고*/
+.blogo {
+  width: 200px;
+  height: 40px;
+}
+/*카피라이트*/
+.copy {
+  width: 800px;
+  height: 100px;
+ text-align: center;
+}
+/*SNS*/
+.sns {
+  width: 200px;
+  height: 100px;
+
+}
+footer {
+    display: flex;
+    height: 120px;
+ 
+    color: #777;
+    padding: 35px;
+}
+footer p {
+    color: #888;
+}
+.left {
+    width: 1000px;
+}
+.right {
+    width: 340px;
+}   
+.sns {
+    height: 30px;
+}
+.sns li {
+    display: inline;
+    margin-right: 10px;
+}

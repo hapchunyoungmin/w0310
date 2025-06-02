@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab:cheacked tabs</title>
+</head>
+<style>
+    *{
+        block-size:border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font:15px/1.6'돋움',sans-serif;
+        color:#333
+    }
+    ul{
+        list-style-type:none;
+    }
+    a{
+        color: #333;
+        text-decoration: none;
+    }
+    .tabs{
+        position: relative;
+        width: 400px;
+        height: 200px;
+        background: yellow;
+    }
+    .tabs .tab-content{
+        position: absolute;
+        display:none;
+        width: 100%;
+        padding: 16px;
+        border-top: 1px solid #333;
+    }
+    .tabs input{
+        display: none;
+    }
+    .tabs label{
+        cursor: pointer;
+        background: #a3a3a3;
+        color: #838383;
+        display: inline-block;
+        padding: 2px 8px;
+    }
+    .tabs input:checked+label{
+        background: #464646;
+        color: white;
+    }
+    .tabs input:checked+label+.tab-content{
+        display:block;
+    }
+    /*teb1 공지사항*/
+    .tabs .tab1{
+        line-height: 2;
+    }
+    .tabs .tab1>a{
+        width: 280px;
+        display: inline-block;
+    }
+    .tabs .tab1 a:hover{
+     text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="tabs">
+        <!--tab-->
+       
+        <input type=radio name="tab" id="tab1">
+        <label for="tab1">공지사항</label>
+        <div  class = "tab1 tab-content">
+             <ul>
+                <li><a href="#">공지사항입니다.</a><span>2025-06-02</span></li>
+                <li><a href="#">공지사항입니다.</a><span>2025-06-02</span></li>
+                <li><a href="#">공지사항입니다.</a><span>2025-06-02</span></li>
+                <li><a href="#">공지사항입니다.</a><span>2025-06-02</span></li>
+            </ul>
+        </div>
+        <input type=radio name="tab" id="tab2">
+        <label for="tab2">갤러리</label>
+        <div  class = "tab2 tab-content">
+            갤러리내용
+
+        </div>
+    </div>
+</body>
+</html>

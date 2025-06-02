@@ -1,0 +1,173 @@
+@charset "utf-8";
+*{box-sizing: border-box;}
+body{
+    font: 16px/1.6;
+    background-color: #fff;
+    color: #333;
+    margin: 0 auto;
+
+}
+
+body,ul,  h2,p{
+    margin: 0 auto;
+
+}
+header, .contents, footer{
+    width: 1340px;
+    margin: 0 auto;
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+   
+    width: 600px;
+    height: 60px;
+    text-align: center;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+nav li{
+
+    display: inline-block;
+    width: 120px;
+    line-height: 60px;
+}
+nav .main li>a{
+    font-size: 18px;
+}
+.slide{
+    width: 1920px;
+    height: 350px;
+    background: yellow;
+    overflow: hidden;
+    text-align: center;
+}
+.slide li:nth-of-type(2){
+    display: none;
+}
+.slide li:nth-of-type(3){
+    display: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contents{
+    height: 600px;
+}
+.contents a{
+    color: #f5a5a5;
+}
+.link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    background: rgb(255, 255, 255);
+}
+.banner{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: lightpink;
+}
+.banner > div:first-of-type{
+    display: flex;
+
+}
+.banner .cont{
+    display: flex;
+}
+.banner .cont img{
+    margin-right: 16px;
+}
+.noge{
+    height:330px;
+    display: flex;
+    color:#777 ;
+}
+.noge h2{
+    padding-bottom: 16px;
+}
+.notice{
+    width: 670px;
+    background: #f5f5f5;
+    padding: 35px 30px;
+    color:#444;
+}
+
+.notice a{
+    display: inline-block;
+    width: 500px;
+}
+.gallery{
+    width: 670px;
+    background: #f5f5f5;
+    padding: 35px 16px;
+    color:#444 ;
+    
+}
+.gallery h2{
+    padding-bottom: 16px;
+
+}
+.gallery .inner{
+    display: flex;
+}
+.gallery a{
+  margin-top: 20px;
+  margin-right:15px;
+} 
+
+footer{
+    height: 120px;
+    background: rgb(251, 233, 233);
+    display: flex;
+    color: #777;
+    padding: 0 30px;
+}
+footer a{
+    color: #666;
+}
+.addr{
+    padding-top: 16px;
+    height: 120px;
+    width: 1140px;
+}
+.right{
+   height: 120px;
+    width:200px;
+    background:
+}
+.sns{
+    padding-top: 24px;
+    height: 40px;
+    }
+
+.sns img{
+    width: 24px;
+}
+
+.sns li{
+        display: inline;
+    }
+    /*last-of-typed을 제뢰환 li요소의 끝태그 앞에 "ㅣ"추가*/
+.sns li:not(:last-of-type)::after{
+    content:"ㅣ";
+}
+
+
+.fs{
+    height: 60px;
+    padding-top: 24px;
+}
+

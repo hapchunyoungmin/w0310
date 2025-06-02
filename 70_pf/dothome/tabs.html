@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>:target을 활용한 탭</title>
+  <style>
+    .tab-buttons a {
+      padding: 10px 20px;
+      background: #eee;
+      border: 1px solid #ccc;
+      text-decoration: none;
+      color: black;
+      margin-right: -4px;
+      display: inline-block;
+    }
+
+    .tab-buttons a:hover {
+      background: #ddd;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+
+    /* 기본 탭 보이기 */
+    .tab-content:first-of-type {
+      display: block;
+    }
+
+    /* 현재 선택된 탭 */
+    .tab-content:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="tabs">
+  <div class="tab-buttons">
+    <a href="#tab1">탭 1</a>
+    <a href="#tab2">탭 2</a>
+    <a href="#tab3">탭 3</a>
+  </div>
+
+  <div id="tab1" class="tab-content">
+    <h3>탭 1 내용</h3>
+    <p>첫 번째 탭의 내용입니다.</p>
+  </div>
+
+  <div id="tab2" class="tab-content">
+    <h3>탭 2 내용</h3>
+    <p>두 번째 탭의 내용입니다.</p>
+  </div>
+
+  <div id="tab3" class="tab-content">
+    <h3>탭 3 내용</h3>
+    <p>세 번째 탭의 내용입니다.</p>
+  </div>
+</div>
+
+</body>
+</html>
