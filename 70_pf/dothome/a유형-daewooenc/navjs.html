@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*공통*/
+        *{  
+            box-sizing:border-box;
+            margin: 0 auto;
+            padding: 0;  
+        }
+        body{
+            font:15px/1.6 '돋움',sans-serif;
+            color: #333;
+            background: #fff;
+        }
+        ul{
+            list-style-type:none;
+        }
+        a{
+            text-decoration: none;
+            color:#333;
+        }
+        header{
+            position: relative;
+            width: 1200px;
+            height: 100px;
+            background: #000;
+            padding-top: 30px;
+        }
+   
+        .gnb{
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            top:30px;
+        }
+        /*임시*/
+       /* nav * {outline: 1px solid lime;}*/
+        /*1depth: 메인 메뉴*/
+        .main{
+            display: flex;
+        }
+        .main li{
+            width: 160px;
+            text-align: center;
+        }
+        .main>li>a{
+            font-size: 18px;
+            font-weight: bold;
+            background:#ddd;
+            display: block;
+           
+        }
+        .main>li>a:hover{
+            background: #1a4975;
+            color:#fff;
+        }
+        .main>li>a:hover + .sub{
+            height: 150px;
+        }
+        /*2depth*/
+        .sub{
+            /*dispaly,visibikity는 transition이 적용 x*/
+
+            background: rgba(0,0,0,0.4);
+            height: 0px;
+        }
+
+
+        .sub a{
+            font-style: 14px;
+            color:#fff
+
+        }
+        .sub a:hover{
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- header>h1.logo>a>img^^nav.gnb>ul.main>li*4>a[href]+ul.sub>li*4>a[href] -->
+    <header>
+        <h1 class="logo"><a href=""><img src="./images/logo.png" alt=""></a></h1>
+        <nav class="gnb">
+            <ul class="main">
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul class="sub">
+                        <li><a href="#">기업정보</a></li>
+                        <li><a href="#">지속가능경영</a></li>
+                        <li><a href="#"> R&D</a></li>
+                        <li><a href="#">투자정보 R&D</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">사업분야</a>
+                    <ul class="sub">
+                        <li><a href="#">토목</a></li>
+                        <li><a href="#">플랜트</a></li>
+                        <li><a href="#">건축</a></li>
+                        <li><a href="#">주택</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> 홍보센터</a>
+                    <ul class="sub">
+                        <li><a href="#">공고</a></li>
+                        <li><a href="#">CI/BI</a></li>
+                        <li><a href="#">정대우가 간다</a></li>
+                        <li><a href="#">브로슈어</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> 뉴스룸</a>
+                     <ul class="sub">
+                        <li><a href="#">새소식</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+   <!--  <script src="https://ajax.googleapics.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        /*
+        객체.매서드()
+         $(document).ready();
+        
+        객체
+
+         사용자 지정 객체
+         {
+         속성:값;
+         속성:값;
+         속성:값;
+         속성:값;....
+         } 
+
+         내장객체
+         $(document)
+         $('jq선택자')또는 ("jq선택자")
+         $('.main>li')
+         #('.sub')
+         DOM(document object model)객체
+
+        이벤트 매서드()
+         ready(function(){})
+         mouseenter()
+         mouseleave()
+         mouseover()
+         mouseout()
+
+        html/css메서드
+         css({"css속성":"값"})
+
+         addclass('클레스')-->클래스추가
+         removeclass('클레스')-->클래스제거
+
+        효과매서드
+         hide() -> 숨긴다
+         show() -> 보인다
+         slideDown() -> 위에서 아래로 보인다
+         slideUp() -> 아래에서 위로 숨긴다
+         stop() -> 효과를 정지시킨다.
+        */
+/*         $(document).ready(function(){
+            $('.main>li').mouseover(function(){
+                $('.sub').css("display","block");
+            });
+        $(document).ready(function(){
+            $('.main>li').mouseoutr(function(){
+                $('.sub').css({display:"none",backgroundcolor:"red"});
+            });
+        }); */
+       /*  $(document).ready(function(){
+            $('.main>li').mouseover(function(){
+                $('.sub').addClass("on");
+            });
+        $(document).ready(function(){
+            $('.main>li').mouseoutr(function(){
+                $('.sub').removeClass("on");
+            });
+        });
+        
+        제이쿼리의 문(statements)의 형식:
+            객체.메서드();
+        */
+       $(document).ready(function(){
+            $('.main>li').mouseover(function(){
+                $('.sub').stop().slideDown();
+            });
+        $(document).ready(function(){
+            $('.main>li').mouseoutr(function(){
+                $('.sub').stop().slideDown();
+        }); 
+    });
+    </script>
+</body>
+</html>

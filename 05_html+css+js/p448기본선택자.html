@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").css("border","4px solid red");
+            $("#gnb").css("border","4px solid orange");
+            $(".logo").css("border","4px solid yellow");
+            $("#gnb > ul > li").css("border","4px solid green");
+            $("#gnb ul").css("border","4px solid blue");
+            $("#visual + #content").css("border","4px solid navy");
+            $("#visual ~ #footer").css("border","4px solid purple");
+            $("div.util").css("border", "4px solid pink")
+            $(".right, .left, #banner").css("border", "4px solid gray")
+        })
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">로고</div>
+      <div class="util">회원가입</div>
+      <nav class="gnb">
+        <ul>
+          <li>
+            메뉴
+            <ul>
+              <li>메뉴1-1</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="visual">
+        <p>비쥬얼</p>
+      </div>
+      <div class="content">
+        <div class="left">왼쪽</div>
+        <div class="riht">
+            <div class="util">오른쪽</div>
+        </div>
+      </div>
+      <div class="banner">배너</div>
+    </header>
+    <footer id="footer">푸터</footer>
+  </body>
+</html>
