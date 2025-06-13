@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+        /* 공통 */
+       /* 공통 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            font: 15px/1.6 '돋움', sans-serif;
+            background: #fff;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        /* 헤더 */
+        header {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1340px;
+            margin: 0 auto;
+            z-index: 1;
+            background: rgb(133, 235, 61);
+            height: 100px;
+        }
+
+        /* 로고 */
+        .logo {
+            width: 200px;
+            height: 40px;
+        }
+
+        /* 내비게이션 */
+        .gnb {
+            position: absolute;
+            right: 20px;
+            width: 640px;
+            height: 30px;
+            text-align: center;
+            align-self: flex-end;
+        }
+
+        /* 1depth: 메인메뉴 */
+        .gnb .main {
+            display: flex;
+        }
+
+        /* 가상요소로 배경바 삽입 */
+        .gnb .main::before {
+            content: "";
+            background: rgba(157, 170, 188, 0.5);
+            z-index: -1;
+            position: fixed;
+            left:0;
+            /* 헤더의 높이 */
+            top: 100px;
+            width: 100%;
+            height: 0px;
+            transition: .3s;
+        }
+
+        .gnb .main:hover::before {
+            height: 150px;
+        }
+
+        .gnb .main>li>a {
+            display: block;
+            width: 160px;
+            height: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            background: #f4f4f4;
+        }
+
+        .gnb .main>li>a:hover {
+            background: #000000;
+            color: #fff;
+        }
+
+        .gnb .main:hover .sub {
+            height: 150px;
+        }
+
+        /* 2depth: 서브메뉴 */
+        .gnb .sub {
+            height: 0;
+            overflow: hidden;
+            transition: .3s;
+        }
+
+        .gnb .sub::before {
+            display: block;
+            content: '';
+            padding-top: 10px;
+        }
+
+        .gnb .sub>li>a {
+            display: block;
+            font-size: 14px;
+        }
+
+        .gnb .sub>li>a:hover {
+            background: #474ead;
+            color: #fff;
+            text-decoration: underline;
+        }
+
+.slide{
+    width: 1340px;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.slide li:nth-of-type(2){
+    display: none;
+}
+.slide li:nth-of-type(3){
+    display: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contents{
+    height: 600px;
+    margin: 0 auto;
+}
+
+.link {
+    margin: 0 auto;
+    width: 1340px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    background: rgb(255, 255, 255);
+}
+.banner{
+    margin: 0 auto;
+    width: 1340px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: rgb(193, 235, 157);
+}
+.banner > div:first-of-type{
+    display: flex;
+
+}
+.banner .cont{
+    display: flex;
+}
+.banner .cont img{
+    margin-right: 16px;
+}
+.modal{
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,1);
+}
+.popup{
+    position: absolute
+    left:calc(50%-300px);
+    width: 800px;
+    margin:0 auto;
+    padding: 30px;
+    background: #ccc;
+    margin-top:300px;
+}
+.noge{
+    margin: 0 auto;
+    height:330px;
+    display: flex;
+    color:#ac7a7a ;
+}
+.noge h2{
+    padding-bottom: 16px;
+}
+.notice{
+    width: 670px;
+    padding: 35px 30px;
+    color:#444;
+}
+
+.notice a{
+    display: inline-block;
+    width: 500px;
+}
+.gallery{
+    width: 670px;
+    padding: 35px 16px;
+    color:#444 ;
+    
+}
+.gallery h2{
+    padding-bottom: 16px;
+
+}
+.gallery span{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 120px;
+    text-wrap: nowrap;
+    display: block;
+
+}
+.gallery .inner{
+    display: flex;
+}
+.gallery a{
+  margin-top: 20px;
+  margin-right:15px;
+} 
+
+footer{
+    align-items: center;
+    width: 1340px;
+    height: 100px;
+    background: rgb(212, 212, 212);
+    display: flex;
+    color: #777;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+footer a{
+    color: #666;
+}
+.addr{
+    padding-top: 16px;
+    height: 120px;
+    width: 1140px;
+}
+.right{
+   height: 120px;
+    width:200px;
+    background:
+}
+.sns{
+    padding-top: 24px;
+    height: 40px;
+    }
+
+.sns img{
+    width: 24px;
+}
+
+.sns li{
+        display: inline;
+    }
+    /*last-of-typed을 제뢰환 li요소의 끝태그 앞에 "ㅣ"추가*/
+.sns li:not(:last-of-type)::after{
+    content:"ㅣ";
+}
+
+
+.fs{
+    height: 60px;
+    padding-top: 24px;
+}
+
+    </style>
