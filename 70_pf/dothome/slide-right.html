@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+           /* --변수면:값;*/
+           --w1320: 1320px;
+        }
+        #slider{
+            width: 1320px;
+            overflow: hidden;
+            position: relative;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #slider {
+    width: calc(100% - 600px);
+    overflow: hidden;
+}
+/* 2025-05-26 추가 */
+#slider {
+  display: block;
+  width: 1320px;
+}
+#slider ul {
+    position: relative;
+    display: flex;
+    width: 400%;
+    height: 100%;
+   width:calc(1320ps * 3) ;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#slider li {
+   list-style: none;
+}
+    </style>
+        <script src="./jquery-3.7.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var x = 0;
+            setInterval(function(){
+                x -= 1320;
+                $('#slider ul').animate({left:'-=' + x + 'px' },500,function(){
+                    $(this).append($(this).children().first()).css('left',0);
+                });
+            },2000);
+        });
+    </script>
+</head>
+<body>
+    <div class="slider" id="slider">
+        <!-- 더미 이미지:임의 사진 -->
+        <ul>
+            <li><img src="https://picsum.photos/id/1015/300/200" alt="1번"></li>
+            <li><img src="https://picsum.photos/id/1025/300/200" alt="2번"></li>
+            <li><img src="https://picsum.photos/id/1035/300/200" alt="3번"></li>
+        </ul>
+    </div>
+
+</body>
+</html>

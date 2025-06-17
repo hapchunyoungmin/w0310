@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <ul>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+        <li>딸기</li>
+        <li>수박</li>
+        <li>귤</li>
+    </ul>
+    <button>더보기</button>
+    <script>
+        /* 
+        탐색매서드
+        find()-하위요소
+        sidlings()-형제요소
+        eq(n)-n번째 요소
+        children()-자식요소
+        first()-첫번쨰요소
+        last- 마지막요소
+
+        조작 매서드
+            appenf()-맨 뒤에 추가
+            prepend()-맨 앞에 추가
+        */
+        $(function(){
+            $('button').click(function(){
+                $('ul').append('<li>딸기</li>')
+                $('ul').append('<li>수박</li>')
+                $('ul').append('<li>귤</li>')
+                $('ul').prepend('<li>오렌지</li>')
+                
+            })
+        })
+    </script>
+</body>
+</html>

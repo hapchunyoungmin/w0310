@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ul>
+  
+   <script>
+    $(function(){
+        // $('ul li:first-child').css({color: 'red'});
+        // $('ul li:first-of-type').css({border: '1px solid red'});
+        // $('ul li:nth-child(1)').css(background: 'red');
+        // $('ul li:nth-of-type(1)').css('color' , 'red');
+        // $('ul li: eq(0)').css('background-color', 'red')
+        // 두단어 이상의 경우는 카멜 표기법으로하면''생략가능
+        /* 
+            탐색매서드
+                first() -첫번쨰요소 선택
+                last()  -마지막 요소 선택
+        */
+         $('ul li').eq(0).css({backgroundColor: 'red'})
+    });
+   </script>
+</body>
+</html>
