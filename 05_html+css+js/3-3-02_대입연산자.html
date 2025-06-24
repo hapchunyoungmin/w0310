@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대입연산자</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid #000;
+        }
+    </style>
+  </head>
+  <body>
+    <script>
+       /*
+       대입연산자
+           =
+           ->같다는 의미가 아니라 변수에 대입을 의미한다.
+       복합대입 연산자
+           +=      i+=1-> i=i+1
+           -=      i-=1-> i=i-1
+           *=      i*=2-> i=i*2
+           /=      i/=2-> i=i/2
+           %=      i%=2-> i=i%2
+           **=     i**=2-> i=i**2
+           <<=     i<<=2-> i=i<<2
+           >>=     i>>=2-> i=i>>2
+           &=      i&=2-> i=i&2
+           |=      i|=2-> i=i|2
+           ^=      i^=2-> i=i^2
+
+           예> let i = 5
+               i**2;
+               -> i = i**2;
+               -> i = 5**2;
+               -> i = 5*5;
+               -> i = 25;
+       */
+        let num1 = 10;
+        let num2 = 20;
+        let num3 = 30;
+        let num4 = 40;
+        let num5 = 50;
+        let num6 = 60;
+
+      num1 += 10;
+      num2 -= 10;
+      num3 *= 10;
+      num4 /= 10;
+      num5 %= 10;
+      num6 **= 2;
+
+      console.log(num1 + ',' + num2 + ',' + num3 + ',' + num4 + ',' + num5 + ',' + num6);
+      console.log(`${num1}, ${num2}, ${num3}, ${num4}, ${num5}, ${num6}`);
+
+      let str = '자바스크립트';
+      str += '제이쿼리'; // str = '자바스크립트' + '제이쿼리';
+      console.log(str); // '자바스크립트제이쿼리'
+
+    let table ='<table>';
+        table+= '<tr>';
+        table += '<td>자바스크립트</td><td>제이쿼리</td>';
+        table += '</tr>'
+        table += '</table>'
+        // HTML 테이블 구조를 생성
+        // table 변수에 HTML 테이블 구조를 저장
+        // <table> 태그로 시작하고 <tr> 태그로 행을 만들고 <td> 태그로 셀을 만듭니다.
+        // 마지막에 </table> 태그로 테이블을 닫습니다.
+        /* 
+        <table>
+          <tr>
+            <td>자바스크립트</td>
+            <td>제이쿼리</td>
+          </tr>
+        </table>
+        */
+    document.write(table); // HTML 테이블 구조를 생성하여 출력
+
+    let num = 10;
+    let x = 0;
+    let y = 0;
+    x = y = num; // y = 10 -> x =10
+    </script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        /* 
+        원시데이터타입 
+            1.문자열 - ''나 ""로 곡 묶어야함
+            2.숫자 - 정수,소수
+            3.불 - true,false
+            4.undefined- 선언후 할당x
+            5.null- 빈값
+            6.symbol
+
+            객체데이터 타입
+            1.함수
+            2.객체
+            3.배열
+            */
+           let num1 = 10;
+           let num2 = 10.5;
+           let num3 = 1e+2;
+           console.log(num1);
+           console.log(num2);
+           console.log(num3);
+       // 문자열 데이터
+
+       let str1 = '문자1';
+       let str2 = "문자2";
+       console.log(str1);
+       console.log(str2);
+
+        //''또는 ""안에 있는''나""는 특수문자 처리    
+       let str3 = '문자는 "문자"';
+       console.log(str3);
+        //  \n은 띄어쓰기 \\ 돈문자
+        // document.write()에서는 <br>태그로 행을 바꾼다
+        // alert()에서는 <br>를 사용할수없다
+       let str5 = "문자는 \\\"문자\"";
+       console.log(str5);
+
+        // 불  
+        let temp1 = (5 > 4);
+        let temp2 = (5 < 4);
+        console.log(temp1);//true
+        console.log(temp2);//false
+
+        // 0의 값은 false,0이외의 값은 true
+        let temp3 = 0;
+        let temp4 = 1;
+        console.log(Boolean(temp3));//false
+        console.log(temp4);//false
+
+        console.log(Boolean(0));//false
+        console.log(Boolean(1));//false
+        console.log(Boolean(null));//false
+        console.log(Boolean(undefined));//false
+        console.log(Boolean('0'));//true
+        console.log(Boolean(function(){}));//true
+
+        // undefinded
+        // 변수를 선언 하였으나,데이터값을 지정하지 않았을경우
+        let tmp1 = 10;
+        let tmp2;
+        console.log(tmp1);
+        console.log(tmp2);//undefined
+
+        let obj = {};
+        obj.name1 = '홍길동';
+        obj.age;
+        console.log(obj.name1);
+        console.log(obj.age);
+
+        // null
+        // ->변수를 빈(empty)상태(초기화)로 만들거나 테이터를 저장하였으나 값이 존재x
+        let obj2 = 10;
+        obj2 = null;
+        console.log(obj2);
+
+        // $(document)-자바스크립트에서 만들어진 언어
+        // get 가져오다
+        // Elements 요소
+        // By:~의 의해서
+        // Id:아이디 선택자
+        // 문서에서 아이디가 gnb인 요소를 가져온다.
+        let obj3 = document.getElementById('gnb');
+        console.log(obj3);
+
+        // typeof 연산자
+        // ->변수에 저장된 데이터의 타입을 확인
+        // 형식: typeof 값
+        console.log(typeof 10);//number
+        console.log(typeof '문자');//string
+        console.log(typeof true);//Boolean
+        console.log(typeof undefined)//undefined
+        console.log(typeof null)//object ->기본 데이터 타입
+        console.log(typeof {})//object ->기본 데이터 타입
+        console.log(typeof [])//object ->기본 데이터 타입
+        console.log(typeof function(){})//function
+
+        // 테일윈드 css프레임 위크
+        // 리액트와 제이퀴리는 자바스크립트의 라이브러리이다.
+       </script>
+</body>
+</html>
