@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>반복문</h1>
+    <h2>while</h2>
+    <div class="sum" id="sum"></div>
+  <script> 
+      let n = 1;
+      let sum = 0;
+      while(n < 8){
+        //sum = sum +n;
+      sum += n; // 0 -> 1
+      //n = n + 1;
+      n++; // 1 -> 2
+      }
+      //제이쿼리
+      $('#sum').text(`n = ${n}, sum = ${sum}`);
+      //바닐라 스크립트
+      document.getElementById('sum').textContent = `n = ${n}, sum = ${sum}`;
+      console.log(`n = ${n}, sum = ${sum}`);
+</script>  
+</body>
+</html>
